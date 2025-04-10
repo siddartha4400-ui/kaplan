@@ -1,12 +1,12 @@
-// import '../css/app.css'; 
-// import './bootstrap';
+import '../css/app.css'; 
+import './bootstrap';
 import './services/apiRequest';
 import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { createRoot } from 'react-dom/client';
 import '../css/theme/theme.min.css'; // bootstarp
 import '../css/vendor/tiny-slider/dist/tiny-slider.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../css/vendor/bootstrap/dist/js/bootstrap.bundle.min.js';
 // import '../css/vendor/bootstrap/dist/simplebar.min.js'
