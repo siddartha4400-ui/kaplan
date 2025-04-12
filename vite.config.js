@@ -6,17 +6,30 @@ export default defineConfig(({ mode }) => {
     // Load environment variables from `.env`
     const env = loadEnv(mode, process.cwd(), "VITE");
     const isProduction = env.VITE_APP_ENV === "production";
+    const usUbuntu = env.VITE_APP_IS_UBUNTU;
 
     return {
         server: !isProduction
             ? {
-                host: "127.0.0.1",
-                port: 5173,
-                hmr: {
-                    host: "127.0.0.1",
-                    protocol: "ws",
-                },
-            }
+                  // host: "127.0.0.1",
+                  // port: 5173,
+                  // hmr: {
+                  //     host: "127.0.0.1",
+                  //     protocol: "ws",
+                  // },
+                  host: usUbuntu ? "0.0.0.0" : "127.0.0.1",
+                  port: 5173,
+                  hmr: {
+                      host: usUbuntu ? "westlandpublishers.local" : "127.0.0.1",
+                      protocol: "ws",
+                  },
+                //   host: "0.0.0.0",
+                //   port: 5173,
+                //   hmr: {
+                //       host: "westlandpublishers.local",
+                //       protocol: "ws",
+                //   },
+              }
             : {},
 
         plugins: [
@@ -34,9 +47,9 @@ export default defineConfig(({ mode }) => {
         },
         build: isProduction
             ? {
-                outDir: "public/build",
-                emptyOutDir: true,
-            }
+                  outDir: "public/build",
+                  emptyOutDir: true,
+              }
             : {},
     };
 });
