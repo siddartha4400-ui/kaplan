@@ -57,7 +57,12 @@ class JournalService
     {
         return $this->journal->getJournalMOdel($id);
     }
-    public function getjournalsDropdownService(){
+    public function getjournalsDropdownService()
+    {
         return $this->journal->getjournalDropdownModle();
+    }
+    public function getJournalsService($from)
+    {
+        return $this->journal->getJournalsModle($from);
     }
 }

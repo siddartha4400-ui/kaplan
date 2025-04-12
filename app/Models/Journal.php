@@ -78,7 +78,7 @@ class Journal extends Model
             ->mapWithKeys(function ($item, $key) use ($keyMapping) {
                 return [$keyMapping[$key] ?? $key => $item];
             });
-        $groupEditors = collect($updatedData->get('linked_table'))->map(function ($item) use($updatedData) {
+        $groupEditors = collect($updatedData->get('linked_table'))->map(function ($item) use ($updatedData) {
             // storeCustomLogs($item, 'siddulog');
             return [
                 'value' => $item['table_editor'][0]['id'],
@@ -95,8 +95,26 @@ class Journal extends Model
         return $updatedData;
     }
 
-    public function getjournalDropdownModle(){
-        $data = Journal::select(['id as value' ,'title as label'])->get()->toArray();
+    public function getjournalDropdownModle()
+    {
+        $data = Journal::select(['id as value', 'title as label'])->get()->toArray();
         return $data;
+    }
+    public function getJournalsModle($context)
+    {
+        // Start the base query with `id`, `title`, `photoOurJournal`, and `photo`
+        $query = Journal::select(['id', 'title', 'photoOurJournal', 'photo']);
+
+        // Dynamically determine which relationship to load based on the context
+        $relationship = ($context == 'dashboard') ? 'photoOurJournalFile' : 'photoFile';
+
+        $query->with([
+            $relationship => function ($query) {
+                $query->select(['fid', 'file_name', 'file_path']);
+            }
+        ]);
+
+        // Execute the query and return as an array
+        return $query->get()->toArray();
     }
 }

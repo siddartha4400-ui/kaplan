@@ -17,7 +17,9 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return Inertia::render('Home');
 })->name('home');
-
+Route::get('/test', function () {
+    return Inertia::render('Test');
+});
 
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard');
@@ -47,4 +49,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

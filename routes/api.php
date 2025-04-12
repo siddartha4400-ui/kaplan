@@ -24,5 +24,6 @@ Route::get('/get_editors_dropdown', [EditorController::class, 'getEditorDropdown
 Route::get('/get_journals_dropdown', [JournalController::class, 'getjournalsDropdownController']);
 Route::post('/create_articel', [ArticleController::class, 'createArticelController']);
 Route::get('/get_articel/{edit}', [ArticleController::class, 'getArticelController']);
+Route::get('/get_journals/{from}', [JournalController::class, 'getJournalsController']);
 
 

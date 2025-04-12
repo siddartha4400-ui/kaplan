@@ -35,3 +35,5 @@ export const getJournalsForDropdown = REGEX_URL + "get_journals_dropdown";
 export const createArticel = REGEX_URL + "create_articel";
 
 export const getArticel = REGEX_URL + "get_articel";
+
+export const getJournalsApi =REGEX_URL + "get_journals";

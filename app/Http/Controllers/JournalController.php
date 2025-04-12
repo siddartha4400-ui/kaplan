@@ -32,4 +32,11 @@ class JournalController extends Controller
             return apiResponse(true, 'successful', $this->journalService->getjournalsDropdownService(), 201);
         });
     }
+
+    public function getJournalsController($from)
+    {
+        return tryCatchHelper(function () use($from){
+            return apiResponse(true, 'successful',  $this->journalService->getJournalsService($from), 201);
+        });
+    }
 }
