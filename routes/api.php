@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\TableController;
 use App\Http\Controllers\EditorController;
+use App\Http\Controllers\SliderController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\JournalController;
 
@@ -25,5 +26,5 @@ Route::get('/get_journals_dropdown', [JournalController::class, 'getjournalsDrop
 Route::post('/create_articel', [ArticleController::class, 'createArticelController']);
 Route::get('/get_articel/{edit}', [ArticleController::class, 'getArticelController']);
 Route::get('/get_journals/{from}', [JournalController::class, 'getJournalsController']);
-
-
+Route::post('/slider_store', [SliderController::class, 'store']);
+Route::get('/slider_get/{key}', [SliderController::class, 'getSliderData']);

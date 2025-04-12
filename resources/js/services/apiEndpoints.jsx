@@ -36,4 +36,6 @@ export const createArticel = REGEX_URL + "create_articel";
 
 export const getArticel = REGEX_URL + "get_articel";
 
-export const getJournalsApi =REGEX_URL + "get_journals";
+export const getJournalsApi = REGEX_URL + "get_journals";
+export const slider_store = REGEX_URL + "slider_store";
+export const slider_get = REGEX_URL + "slider_get";
