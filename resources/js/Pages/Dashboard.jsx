@@ -39,6 +39,13 @@ export default function Dashboard() {
                                 >
                                     Create Editors
                                 </Link>
+
+                                <Link
+                                    href="/slaider-form"
+                                    className="px-4 py-2 bg-blue-500 text-white rounded"
+                                >
+                                    Slaider form
+                                </Link>
                             </div>
                         </div>
 

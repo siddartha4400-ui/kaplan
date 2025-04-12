@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getJournals } from "../services/api/journalapis";
+import { getJournals } from "../services/api/apis";
 
 const Test = () => {
     const [response, setResponse] = useState(null);
