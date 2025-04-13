@@ -26,16 +26,29 @@ function tryCatchHelper(callable $callback, string $logFile = "custom_log")
     }
 }
 
-function apiResponse(bool $success, string $message, $data = null, $statusCode = null)
-    {
-        // If no status code is provided, set it based on success/failure
-        if ($statusCode === null) {
-            $statusCode = $success ? 200 : 400; // Default: 200 for success, 400 for failure
-        }
+// function apiResponse(bool $success, string $message, $data = null, $statusCode = null)
+// {
+//     // If no status code is provided, set it based on success/failure
+//     if ($statusCode === null) {
+//         $statusCode = $success ? 200 : 400; // Default: 200 for success, 400 for failure
+//     }
 
-        return response()->json([
-            'success' => $success,
-            'message' => $message,
-            'data' => $data,
-        ], $statusCode);
+//     return response()->json([
+//         'success' => $success,
+//         'message' => $message,
+//         'data' => $data,
+//     ], $statusCode);
+// }
+
+function apiResponse(bool $success, string $message, $data = null, $statusCode = null)
+{
+    if ($statusCode === null) {
+        $statusCode = $success ? 200 : 400;
     }
+
+    return response()->json([
+        'success' => $success,
+        'message' => $message,
+        'data' => is_callable($data) ? $data() : $data, // 💡 execute closure if present
+    ], $statusCode);
+}

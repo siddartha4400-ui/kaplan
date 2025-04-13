@@ -44,6 +44,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/slaider-form', function () {
         return Inertia::render('Slaiderselector');
     });
+    Route::get('/members-in-form', function () {
+        return Inertia::render('MembersIn');
+    });
+    Route::get('/our-editors-form', function () {
+        return Inertia::render('OurEditors');
+    });
 });
 
 Route::middleware('auth')->group(function () {
