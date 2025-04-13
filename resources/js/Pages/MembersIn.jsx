@@ -1,9 +1,7 @@
-import React from 'react'
-
+import React from "react";
+import MembersIn1 from "@/Components/membersin/molecule/MembersIn";
 const MembersIn = () => {
-  return (
-    <div>MembersIn</div>
-  )
-}
+    return <MembersIn1 />;
+};
 
-export default MembersIn
+export default MembersIn;

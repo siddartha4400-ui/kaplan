@@ -8,11 +8,11 @@ use Illuminate\Http\Request;
 
 class SliderController extends Controller
 {
-    public function store(Request $request)
+    public function store(Request $request, $key)
     {
-        return tryCatchHelper(function () use ($request) {
+        return tryCatchHelper(function () use ($request, $key) {
             // Attempt to find existing slider with key = 1
-            $slider = Slider::firstOrNew(['key' => 1]);
+            $slider = Slider::firstOrNew(['key' => $key]);
 
             // Store or update the JSON field
             $slider->json = $request->all();

@@ -46,6 +46,18 @@ export default function Dashboard() {
                                 >
                                     Slaider form
                                 </Link>
+                                <Link
+                                    href="/members-in-form"
+                                    className="px-4 py-2 bg-blue-500 text-white rounded"
+                                >
+                                    Members in form
+                                </Link>
+                                <Link
+                                    href="/our-editors-form"
+                                    className="px-4 py-2 bg-blue-500 text-white rounded"
+                                >
+                                    Our editors
+                                </Link>
                             </div>
                         </div>
 

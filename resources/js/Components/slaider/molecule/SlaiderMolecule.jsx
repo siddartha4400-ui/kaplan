@@ -21,7 +21,7 @@ const SlaiderMolecule = () => {
     };
 
     const handleSave = () => {
-        const res = storeSlider(formData);
+        const res = storeSlider(formData ,1);
         customAlert("success", "Slider saved successfully!", 3000);
     };
     useEffect(() => {

@@ -1,9 +1,7 @@
-import React from 'react'
-
+import React from "react";
+import OurEditorsMolecule from "@/Components/oureditors/molecule/OurEditorsMolecule";
 const OurEditors = () => {
-  return (
-    <div>OurEditors</div>
-  )
-}
+    return <OurEditorsMolecule />;
+};
 
-export default OurEditors
+export default OurEditors;
