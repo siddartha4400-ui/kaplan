@@ -3,6 +3,7 @@ import {
     slider_store,
     slider_get,
     get_articles,
+    getEditorsForDropdown,
 } from "../apiEndpoints";
 
 export const getJournals = async (data) => {
@@ -23,10 +24,10 @@ export const getJournals = async (data) => {
         // alert("Failed to submit the form.");
     }
 };
-export const storeSlider = async (data) => {
+export const storeSlider = async (data, key) => {
     try {
         const response = await window.apiRequest(
-            `${slider_store}`,
+            `${slider_store}/${key}`,
             "post",
             data
         );
@@ -60,6 +61,11 @@ export const getSlider = async (key) => {
         console.error("Error fetching slider data:", error);
         return null;
     }
+};
+
+export const editorsData = async () => {
+    const editorResponse = await window.apiRequest(getEditorsForDropdown);
+    return editorResponse;
 };
 
 export const getArticles = async (key, journal = 0, issue = 0) => {

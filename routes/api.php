@@ -26,6 +26,6 @@ Route::get('/get_journals_dropdown', [JournalController::class, 'getjournalsDrop
 Route::post('/create_articel', [ArticleController::class, 'createArticelController']);
 Route::get('/get_articel/{edit}', [ArticleController::class, 'getArticelController']);
 Route::get('/get_journals/{from}', [JournalController::class, 'getJournalsController']);
-Route::post('/slider_store', [SliderController::class, 'store']);
+Route::post('/slider_store/{key}', [SliderController::class, 'store']);
 Route::get('/slider_get/{key}', [SliderController::class, 'getSliderData']);
 Route::get('/get_articles/{key}/{journal}/{issue}', [SliderController::class, 'getArticlesData']);
