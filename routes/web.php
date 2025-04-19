@@ -17,16 +17,12 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return Inertia::render('Home');
 })->name('home');
-<<<<<<< HEAD
 Route::get('/test', function () {
     return Inertia::render('Test');
 });
-=======
-
 Route::get('/about', function () {
     return Inertia::render('About');
 })->name('about');
->>>>>>> sharath_dev
 
 Route::get('/open-access', function () {
     return Inertia::render('OpenAccess');

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../../css/journals.css";
+import "../../../../css/Journals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import JournalCard from "@/Components/JournalsComponent/molecule/JournalsCard";
 import { images } from "../../../../img/assets";
