@@ -1,0 +1,11 @@
+
+.manuscript_button{
+    background-color: rgba(78, 84, 200, 0.9) !important;
+    color: white;
+}
+
+.manuscript_button:hover{
+    background-color: rgba(42, 51, 222, 0.9) !important;
+    color: white;
+}
+

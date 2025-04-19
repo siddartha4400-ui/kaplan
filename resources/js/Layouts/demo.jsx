@@ -327,7 +327,7 @@ function Header() {
                                                     }
                                                 >
                                                     {link.text}
-                                                    <i className="navitem-arraow ci-arrow-down small text-muted ms-2"></i>
+                                                    {/* <i className="ci-arrow-down small text-muted ms-2"></i> */}
                                                 </a>
 
                                                 <ul

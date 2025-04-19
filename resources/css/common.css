@@ -1,0 +1,85 @@
+a {
+    text-decoration: none;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 0.4rem 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #dc3545;
+    outline: none;
+}
+
+.custom-btn {
+    padding: 0.25rem 0.65rem;
+    background-color: #fb6b5e;
+    color: white;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.custom-btn:hover {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+
+/*  guidence style */
+th {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.formatting-text p {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.list-unstyled li,
+.reserch-article p,
+.editorial-article p,
+.case-report p,
+.review-article p,
+.short-communication p,
+.clinical-image p,
+.opinion-guidelines p,
+.mini-review-guidelines p,
+.letter-to-editor-guidelines p,
+.membership h6,
+.policies-guidlines h5,
+.peer-review h5 {
+    color: rgb(79, 79, 79);
+}
+
+.empty-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.empty-table th,
+.empty-table td {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+
+/* Highlight 2nd and 4th columns */
+.empty-table td:nth-child(2),
+.empty-table th:nth-child(2),
+.empty-table td:nth-child(4),
+.empty-table th:nth-child(4) {
+    background-color: #e6f2ff;
+}
+
+p{
+    font-size: 1rem !important;
+}

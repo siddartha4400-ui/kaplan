@@ -1,0 +1,36 @@
+/* Make the navbar sticky */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 0rem;
+    z-index: 1000;
+  }
+  
+  /* Add scrollable content */
+  .content {
+    /* padding: 1rem; */
+    height: 200vh; /* Enough height to allow scrolling */
+    background-color: #f0f0f0;
+    font-size: 18px;
+  }
+
+  .dropdown-menu {
+    background-color: #042c8d;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-top: 0;
+    z-index: 1050; /* Higher than navbar */
+  }
+  
+  .dropdown-item {
+    color: white !important;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
