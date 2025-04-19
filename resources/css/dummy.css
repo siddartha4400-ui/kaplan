@@ -1,0 +1,258 @@
+/* Base styles */
+.topbar {
+    background-color: #0c1836 !important;
+    padding: 0.5rem 0;
+}
+
+/* Navbar styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #042c8d !important;
+    color: white;
+    padding: 0;
+    z-index: 1000;
+}
+
+.navbar .nav-link {
+    padding: 1.12rem 1.15rem !important;
+}
+
+/* Sticky navbar styles */
+.is-sticky {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+    background-color: #042c8d ;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-top: 0;
+    z-index: 1050;
+}
+
+.dropdown-item {
+    color: white !important;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Submenu positioning */
+.dropdown-submenu {
+    position: relative;
+}
+
+/* Desktop styles */
+@media (min-width: 992px) {
+    .dropdown-submenu > .dropdown-menu {
+        position: absolute;
+        top: 0;
+        left: 90%;
+        margin-top: -1px;
+        display: none;
+    }
+
+    /* .dropdown-menu.show {
+        display: block;
+    } */
+
+    /* .dropdown-submenu:hover > .dropdown-menu {
+        min-width: 230px;
+        display: block;
+        white-space: normal;
+    } */
+
+    .ci-arrow-right,
+    .ci-arrow-down {
+        font-size: 0.75rem; /* smaller arrow */
+        color: white !important;
+        /* float: right !important; */
+    }
+
+    /* .navbar .dropdown-toggle::after {
+        display: none;
+    } */
+
+    /* .dropdown-submenu > a:after {
+      content: "►";
+      font-size: 10px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+  } */
+
+    /* .navbar-collapse {
+        display: flex !important;
+    } */
+}
+
+/* Mobile styles */
+@media (max-width: 991.98px) {
+    /* Fix menu toggle visibility */
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.5);
+        padding: 0.375rem 0.75rem;
+        display: block;
+    }
+
+    /* Make menu items full width */
+    .navbar-nav {
+        width: 100%;
+    }
+
+    /* Fix navbar collapse */
+    .navbar-collapse {
+        /* position: absolute; */
+        /* top: 100%;
+        left: 0;
+        right: 0; */
+        background-color: #042c8d;
+        padding: 0.5rem 0;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+
+    /* Style nav links for mobile */
+    .navbar .nav-link {
+        padding: 0.75rem 1rem !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Style dropdown menus for mobile */
+    .dropdown-menu {
+        position: static;
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        background-color: rgba(4, 44, 141, 0.95);
+    }
+
+    /* Style submenus for mobile */
+    /* .dropdown-submenu > .dropdown-menu {
+        margin-left: 1rem;
+        background-color: rgba(1, 33, 116, 0.9);
+    } */
+
+    /* Show dropdown menus when active */
+    .dropdown-menu.show {
+        display: block;
+    }
+
+    /* Style dropdown toggles */
+    /* .dropdown-toggle:after,
+    .dropdown-submenu > a:after {
+        float: right;
+        margin-top: 0.5rem;
+    } */
+
+    /* Style submenu toggles */
+    /* .dropdown-submenu > a:after {
+      content: "▼";
+      margin-left: 0.5rem;
+      font-size: 0.75rem;
+  }
+  
+  .dropdown-submenu.show > a:after {
+      content: "▲";
+  } */
+
+    /* Border styling for dropdown items */
+    .dropdown-item {
+        padding: 0.75rem 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .dropdown-item:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Search area styles */
+
+.custom-input {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    outline: none;
+}
+
+.custom-input:focus {
+    border-color: #042c8d;
+    box-shadow: 0 0 0 0.25rem rgba(4, 44, 141, 0.25);
+}
+
+.results {
+    /* position: absolute; */
+    width: 100%;
+    background: white;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    z-index: 1100;
+}
+
+.results a {
+    display: block;
+    padding: 0.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+/* new style */
+.navbar-toggler {
+    display: none;
+}
+
+.navbar {
+    display: block; /* Hide the navbar completely */
+}
+
+.dropdown-item i{
+  display: block; /* Show the navbar toggler */
+
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        display: none; /* Hide the navbar completely */
+    }
+
+    .navbar-toggler {
+        display: block; /* Show the navbar toggler */
+    }
+
+    .navbar.show {
+        display: block !important; /* Show navbar when toggled */
+    }
+
+    .search-input {
+        display: none !important; /* Hide the search input on mobile */
+    }
+
+    .dropdown-item i {
+        display: none !important; /* Hide the search input on mobile */
+    }
+
+    .navbar-wrapper {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding-left: 1.5rem !important;  /* px-4 */
+      padding-right: 1.5rem !important; /* px-4 */
+    }
+}

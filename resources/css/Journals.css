@@ -1,0 +1,97 @@
+/* Card styling to match the image */
+.journal-card {
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.journal-card:hover {
+    transform: translateY(-5px);
+}
+
+/* If you need to adjust the card title height for consistency */
+.card-title {
+    min-height: 3rem; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem !important;
+}
+
+.card-text{
+    font-size: 0.8rem !important;
+}
+
+/* Custom button styles if needed */
+.view-button {
+    padding: 8px 24px;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .journal-card {
+        margin-bottom: 1rem;
+    }
+}
+
+.card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.journal-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.journal-abbreviation {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0.5rem 0;
+}
+
+.view-button {
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 0.25rem 0;
+    color: #3498db;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.view-button:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.card-body{
+    padding: 0px !important;
+}
+
+.jurnals-btn{
+    background-color: white !important;
+    border: 1px solid rgb(114, 201, 255) !important;
+    border-radius: 0.2rem;
+    color: rgb(114, 201, 255);
+}
+
+.jurnals-btn:hover{
+    background-color: rgb(114, 201, 255) !important;
+    border: 1px solid rgb(114, 201, 255) !important;
+    border-radius: 0.2rem;
+    color: white;
+}
+.ci-unlocked{
+    color: #1939d9;
+}
