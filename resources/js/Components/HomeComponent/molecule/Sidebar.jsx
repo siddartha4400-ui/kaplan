@@ -11,64 +11,13 @@ const Sidebar = ({ guidelines, selectedGuidelines, setSelectedGuidelines }) => {
     useEffect(() => {
         getSlider(2)
             .then((res) => {
-                console.log("Sidebar:", res);
-                const jsonData = res?.json.editors; // ✅ FIXED THIS LINE
+                const jsonData = res?.json;
                 setMembersuin(jsonData);
             })
             .catch((error) => {
                 console.error("Slider Fetch Error:", error);
             });
     }, []);
-    // console.log(membersin)
-    const MEMBERIN = [
-        images.cardMaster,
-        images.cardPaypal,
-        images.cardVisa,
-        images.cardPaypal,
-        images.cardVisa,
-    ];
-    const GUIDELINES = [
-        {
-            id: 1,
-            title: "Manuscript Guidelines",
-        },
-        {
-            id: 2,
-            title: "Research Article",
-        },
-        {
-            id: 3,
-            title: "Editorial",
-        },
-        {
-            id: 4,
-            title: "Case Report",
-        },
-        {
-            id: 5,
-            title: "Review Article",
-        },
-        {
-            id: 6,
-            title: "Opinion",
-        },
-        {
-            id: 7,
-            title: "Short Communication",
-        },
-        {
-            id: 8,
-            title: "Mini Review",
-        },
-        {
-            id: 9,
-            title: "Letter to Editor",
-        },
-        {
-            id: 10,
-            title: "Clinical Image",
-        },
-    ];
     return (
         <div className="sidebar-wrapper">
             <div className="section">

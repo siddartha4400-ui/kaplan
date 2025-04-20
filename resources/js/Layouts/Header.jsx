@@ -269,7 +269,7 @@ function Header() {
             </div>
 
             {/* Navbar */}
-            {console.log(isNavbarVisible, " grama")}
+            {/* {console.log(isNavbarVisible, " grama")} */}
             <div
                 className={`navbar navbar-expand-lg navbar-dark ${
                     isNavbarVisible ? "show" : ""
