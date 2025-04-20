@@ -6,36 +6,31 @@ import '../../../../css/Footer.css'
 
 const testimonials = [
   {
-    text: "WestLand Publishers is committed to fostering innovation and collaboration...",
+    text: "I recommend WestLand Publishers to researchers seeking a reputable platform. Their attention to detail makes them stand out.",
+    name: "Dr. Sarah White",
+    title: "Researcher",
+    image: images.authorImage, // image of Sarah White
+  },
+  {
+    text: "Collaborating with WestLand Publishers has been a great experience. Their dedication to quality and integrity sets them apart in the industry. From manuscript submission to publication, their team offers exceptional support, ensuring a smooth journey.",
+    name: "Dr. James Carter",
+    title: "Academician",
+    image: images.authorImage1, // image of James Carter
+  },
+  {
+    text: "WestLand Publishers is committed to fostering innovation and collaboration in scholarly publishing. It’s an honor to have my research featured in their journals, and I appreciate their support.",
     name: "Prof. Rebecca Adams",
     title: "Researcher",
-    image: images.authorImage
+    image: images.authorImage2, // image of Rebecca Adams
   },
   {
-    text: "Publishing with WestLand Publishers has been a positive experience...",
+    text: "Publishing with WestLand Publishers has been a positive experience. Their professionalism and rigorous peer review process contribute to the quality of their publications.",
     name: "Dr. Emma Taylor",
     title: "Scholar",
-    image: images.authorImage1
-  },
-  {
-    text: "WestLand Publishers' efforts in advancing scientific research are commendable...",
-    name: "Prof. Michael Brown",
-    title: "Scientist",
-    image: images.authorImage2
-  },
-  {
-    text: "Publishing with WestLand Publishers has been a positive experience...",
-    name: "Dr. Emma Taylor",
-    title: "Scholar",
-    image: images.authorImage2
-  },
-  {
-    text: "WestLand Publishers' efforts in advancing scientific research are commendable...",
-    name: "Prof. Michael Brown",
-    title: "Scientist",
-    image: images.authorImage1
+    image: images.authorImage, // image of Emma Taylor
   }
 ];
+
 
 const FooterTestimonials = () => {
   return (
