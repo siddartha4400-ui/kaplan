@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { images } from "../../../../img/assets";
 import EditorSlider from "./EditorSlider";
 import "../../../../css/Sidebar.css";
+import { getSlider } from "../../../services/api/apis";
 
 const Sidebar = ({ guidelines, selectedGuidelines, setSelectedGuidelines }) => {
-    console.log(selectedGuidelines, " slejhgv");
+    const [membersin, setMembersuin] = useState();
+    useEffect(() => {
+        getSlider(2)
+            .then((res) => {
+                console.log("Sidebar:", res);
+                const jsonData = res?.json.editors; // ✅ FIXED THIS LINE
+                setMembersuin(jsonData);
+            })
+            .catch((error) => {
+                console.error("Slider Fetch Error:", error);
+            });
+    }, []);
+    // console.log(membersin)
     const MEMBERIN = [
         images.cardMaster,
         images.cardPaypal,
@@ -56,7 +69,6 @@ const Sidebar = ({ guidelines, selectedGuidelines, setSelectedGuidelines }) => {
             title: "Clinical Image",
         },
     ];
-
     return (
         <div className="sidebar-wrapper">
             <div className="section">
@@ -94,17 +106,18 @@ const Sidebar = ({ guidelines, selectedGuidelines, setSelectedGuidelines }) => {
                     }}
                     loop
                 >
-                    {MEMBERIN.map((img, i) => (
-                        <SwiperSlide key={i}>
-                            <div className="member-box">
-                                <img
-                                    src={img}
-                                    alt={`Member ${i + 1}`}
-                                    className="img-fluid"
-                                />
-                            </div>
-                        </SwiperSlide>
-                    ))}
+                    {membersin &&
+                        Object.values(membersin).map((img, i) => (
+                            <SwiperSlide key={i}>
+                                <div className="member-box">
+                                    <img
+                                        src={img.filePath}
+                                        alt={`Member ${i + 1}`}
+                                        className="img-fluid"
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        ))}
                 </Swiper>
 
                 <div className="text-end pt-4">
@@ -136,10 +149,7 @@ const Sidebar = ({ guidelines, selectedGuidelines, setSelectedGuidelines }) => {
                         className="custom-input-refresh me-1"
                         placeholder="Email"
                     />
-                    <a
-                        className="btn btn-sm custom-btn refresh-btn"
-                        href="#"
-                    >
+                    <a className="btn btn-sm custom-btn refresh-btn" href="#">
                         Refresh
                     </a>
                 </div>

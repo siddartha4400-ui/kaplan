@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { handleFileUpload, uploadFileToServer } from "../../../Helpers/helper";
 import { storeSlider, getSlider } from "../../../services/api/apis";
 import customAlert from "../../atom/customAlert";
+import '../../../../css/app.css';
 
 const MembersIn = () => {
     const [formData, setFormData] = useState({});

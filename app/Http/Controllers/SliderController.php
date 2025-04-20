@@ -52,20 +52,41 @@ class SliderController extends Controller
     {
         return tryCatchHelper(function () use ($key, $journal, $issue) {
             return apiResponse(true, 'Successful', function () use ($key, $journal, $issue) {
-                $query = Article::select([
-                    'id',
-                    'title',
-                    'doi',
-                    'journal',
-                    'authorAffiliation',
-                    'pdfFile',
-                    'publishedDate',
-                    'volume',
-                    'issue'
-                ])->with([
-                    'journal:id,photo,shortname,title',
-                    'pdfFile:fid,file_path,file_name'
-                ]);
+                $query = Article::
+                    // select([
+                    //     'id',
+                    //     'title',
+                    //     'doi',
+                    //     'journal',
+                    //     'authorAffiliation',
+                    //     'pdfFile',
+                    //     'publishedDate',
+                    //     'volume',
+                    //     'issue'
+                    // ])->
+                    with([
+                        'journal' => function ($query) {
+                            $query->with([
+                                'photoFile' => function ($query) {
+                                    $query->select(['fid', 'fid as fileId', 'file_path as filePath', 'file_name as filename']);
+                                },
+                                'photoOurJournalFile' => function ($query) {
+                                    $query->select(['fid', 'fid as fileId', 'file_path as filePath', 'file_name as filename']);
+                                },
+                                'photoBannerFile' => function ($query) {
+                                    $query->select(['fid', 'fid as fileId', 'file_path as filePath', 'file_name as filename']);
+                                },
+                                'linkedTable' => function ($query) {
+                                    $query->with('tableEditor');
+                                },
+                                'linkedTable' => function ($query) {
+                                    $query->with('tableEditor');
+                                }
+                            ]);
+                        },
+                        // 'journal:id,photo,shortname,title',
+                        'pdfFile:fid,file_path,file_name'
+                    ]);
 
                 if ($key === 'dashboard') {
                     return $query->orderBy('id', 'desc')->limit(5)->get();

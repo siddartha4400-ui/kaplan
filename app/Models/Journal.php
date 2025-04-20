@@ -103,7 +103,7 @@ class Journal extends Model
     public function getJournalsModle($context)
     {
         // Start the base query with `id`, `title`, `photoOurJournal`, and `photo`
-        $query = Journal::select(['id', 'title', 'photoOurJournal', 'photo']);
+        $query = Journal::select(['id', 'title', 'photoOurJournal', 'photo' ,'shortname'])->limit(8);
 
         // Dynamically determine which relationship to load based on the context
         $relationship = ($context == 'dashboard') ? 'photoOurJournalFile' : 'photoFile';

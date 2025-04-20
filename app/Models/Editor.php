@@ -53,7 +53,11 @@ class Editor extends Model
     }
     public function getEditordDropdownModle()
     {
-        $data = Editor::select(['id as value' ,'name as label' ,'chiefEditor'])->get()->groupBy('chiefEditor')->toArray();
+        $data = Editor::select(['id as value', 'name as label', 'chiefEditor', 'photo' ,'affiliation'])->with([
+            'photoFile' => function ($query) {
+                $query->select(['fid', 'fid as fileId', 'file_path as filePath', 'file_name as filename' ]);
+            }
+        ])->get()->groupBy('chiefEditor')->toArray();
         return $data;
     }
 }

@@ -1,32 +1,41 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-
-const slides = [
-    {
-        id: 1,
-        src: 'https://c8.alamy.com/comp/PE2T6E/it-concept-information-technology-diagram-with-icons-of-internet-computer-and-mobile-phone-PE2T6E.jpg',
-        alt: 'Slide 1',
-    },
-    {
-        id: 2,
-        src: 'https://www.shutterstock.com/image-photo/ict-information-communication-technology-concept-260nw-1341139514.jpg',
-        alt: 'Slide 2',
-    },
-    {
-        id: 3,
-        src: 'https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?cs=srgb&dl=pexels-pixabay-356056.jpg&fm=jpg',
-        alt: 'Slide 3',
-    },
-];
+import React, { useEffect, useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import { getSlider } from "../../../services/api/apis";
 
 const ImageSlider = () => {
+    const [slides, setSlides] = useState([]);
+
+    useEffect(() => {
+        getSlider(1)
+            .then((res) => {
+                console.log("Slider API Response:", res);
+
+                const jsonData = res?.json; // ✅ FIXED THIS LINE
+
+                if (jsonData) {
+                    const formattedSlides = Object.values(jsonData).map(
+                        (item, index) => ({
+                            id: index + 1,
+                            src: item.filePath,
+                            // src: item.filePath.replace("http://", "https://"),
+                            alt: item.filename || `Slide ${index + 1}`,
+                        })
+                    );
+                    setSlides(formattedSlides);
+                }
+            })
+            .catch((error) => {
+                console.error("Slider Fetch Error:", error);
+            });
+    }, []);
+
     return (
         <div
             id="carouselExampleIndicators"
             className="carousel slide"
             data-bs-ride="carousel"
-            style={{ width: '100%', height: '100%', position: 'relative' }}
+            style={{ width: "100%", height: "100%", position: "relative" }}
         >
             <div className="carousel-indicators">
                 {slides.map((_, index) => (
@@ -35,28 +44,30 @@ const ImageSlider = () => {
                         type="button"
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to={index}
-                        className={index === 0 ? 'active' : ''}
-                        aria-current={index === 0 ? 'true' : undefined}
+                        className={index === 0 ? "active" : ""}
+                        aria-current={index === 0 ? "true" : undefined}
                         aria-label={`Slide ${index + 1}`}
                     ></button>
                 ))}
             </div>
 
-            <div className="carousel-inner" style={{ height: '100%' }}>
+            <div className="carousel-inner" style={{ height: "100%" }}>
                 {slides.map((slide, index) => (
                     <div
                         key={slide.id}
-                        className={`carousel-item ${index === 0 ? 'active' : ''}`}
-                        style={{ height: '100%' }}
-                    >
+                        className={`carousel-item ${
+                            index === 0 ? "active" : ""
+                        }`}
+                        style={{ height: "100%" }}
+                    >{console.log(slide.src)}
                         <img
                             src={slide.src}
                             className="d-block w-100"
                             alt={slide.alt}
                             style={{
-                                objectFit: 'cover',
-                                height: '100%',
-                                width: '100%',
+                                objectFit: "cover",
+                                height: "100%",
+                                width: "100%",
                             }}
                         />
                     </div>
@@ -68,9 +79,12 @@ const ImageSlider = () => {
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev"
-                style={{ top: '50%', transform: 'translateY(-50%)' }}
+                style={{ top: "50%", transform: "translateY(-50%)" }}
             >
-                <span className="carousel-control-prev-icon" aria-hidden="true" />
+                <span
+                    className="carousel-control-prev-icon"
+                    aria-hidden="true"
+                />
                 <span className="visually-hidden">Previous</span>
             </button>
             <button
@@ -78,9 +92,12 @@ const ImageSlider = () => {
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="next"
-                style={{ top: '50%', transform: 'translateY(-50%)' }}
+                style={{ top: "50%", transform: "translateY(-50%)" }}
             >
-                <span className="carousel-control-next-icon" aria-hidden="true" />
+                <span
+                    className="carousel-control-next-icon"
+                    aria-hidden="true"
+                />
                 <span className="visually-hidden">Next</span>
             </button>
         </div>

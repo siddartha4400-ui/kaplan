@@ -4,6 +4,8 @@ import { handleFileUpload, uploadFileToServer } from "../../../Helpers/helper";
 import { useQueryParams } from "@/Hooks/useQueryParams"; // ✅ Import custom hook
 import { createEditor, getEditor } from "../../../services/apiEndpoints";
 import { Inertia } from "@inertiajs/inertia";
+import '../../../../css/app.css';
+
 const EditorFormOrganisam = () => {
     const { getQueryParam, updateQueryParams } = useQueryParams();
     const [formData, setFormData] = useState({

@@ -8,6 +8,7 @@ import {
 } from "../../../services/apiEndpoints";
 import { Inertia } from "@inertiajs/inertia";
 import JournalFormMolecule from "../molecule/Journalformmolecule";
+import '../../../../css/app.css';
 
 export default function JournalFormOrganisam() {
     const { getQueryParam } = useQueryParams();

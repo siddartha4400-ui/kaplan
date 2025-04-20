@@ -13,9 +13,12 @@ const TitleArticalCard = ({ article }) => {
     return (
         <>
             <h5 className=" fw-semibold">{article.title}</h5>
-            <p className="mb-1 text-primary">{article.author}</p>
+            <p className="mb-1 text-primary">{article.authorAffiliation}</p>
             <p className="mb-1 text-primary">Published: {formattedDate}</p>
             <p className="text-danger ">{article.journal.title}</p>
+            <p className="text-primary bg-gray-100 p-2 rounded">
+                DOI: {article.doi}
+            </p>
             <div className="text-end">
                 <a
                     href={"/latest-artical-theory"}
@@ -24,7 +27,7 @@ const TitleArticalCard = ({ article }) => {
                     Full Text
                 </a>
                 <a
-                    href={article.pdf}
+                    href={article?.pdf_file?.file_path}
                     className="btn btn-outline-success btn-sm"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -46,7 +49,6 @@ const DiscriptionArticalCard = ({ article }) => {
             year: "numeric",
         }
     );
-    console.log(article.journal.description);
     const abstractLink = `/abstract.php?aid=${article.id}&jid=${
         article.journal.id
     }&Article=${article.title.replace(/\s+/g, "-")}`;
@@ -64,7 +66,9 @@ const DiscriptionArticalCard = ({ article }) => {
 
             <div className="container border rounded">
                 <div className="d-flex justify-content-between align-items-center py-2 px-4">
-                    <p className="mb-1 text-danger fw-bold">{article.author}</p>
+                    <p className="mb-1 text-danger fw-bold">
+                        {article.authorAffiliation}
+                    </p>
                     {/* <i
                         className={`ci-arrow-${
                             expanded ? "up" : "down"
@@ -134,11 +138,12 @@ const DiscriptionArticalCard = ({ article }) => {
 };
 
 const ArticleCard = ({ article, latestArticle }) => {
+    console.log(article);
     return (
         <div className="card mb-4 border-0 shadow-sm p-2 border-bottom ">
             <div className="card-header d-flex justify-content-between align-items-center">
                 <span className="fw-bold text-capitalize">
-                    {article.articletype}
+                    {article.articleType}
                 </span>
                 <div className="d-flex align-items-center">
                     <span className="me-2 fw-semibold">
@@ -150,12 +155,17 @@ const ArticleCard = ({ article, latestArticle }) => {
             <div className="card-body d-flex">
                 <div className="col-4 col-md-3 pe-3 text-primary ">
                     <img
-                        src={article.photo}
+                        src={article.journal.photo_file.filePath}
                         alt={article.title}
                         className="img-fluid rounded article-image mb-4"
                     />
-                    <span className="fs-6">ISSN: 3066-3822</span>
-                    <p className="fs-6"> Volume 2 Issue 4</p>
+                    <span className="fs-6">ISSN: {article.journal.issno}</span>
+                    <p className="fs-6">
+                        {" "}
+                        {`Volume ${article.volume - 2024} Issue ${
+                            article.issue
+                        }`}
+                    </p>
                 </div>
                 <div className="col-8 col-md-9">
                     {latestArticle ? (
