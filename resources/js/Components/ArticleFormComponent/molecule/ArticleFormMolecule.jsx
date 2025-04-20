@@ -9,6 +9,7 @@ import {
     getJournalsForDropdown,
 } from "../../../services/apiEndpoints";
 import { Inertia } from "@inertiajs/inertia";
+import {getAllArticleTypesApi} from '../../../services/api/apis'
 //
 const ArticleFormMolecule = () => {
     const { getQueryParam, updateQueryParams } = useQueryParams();
@@ -32,6 +33,22 @@ const ArticleFormMolecule = () => {
     //     e.preventDefault();
     //     console.log(formData);
     // };
+
+    const fetchArticleTypes = async () => {
+        try {
+          const response = await getAllArticleTypesApi();
+          if (response?.success && Array.isArray(response.data)) {
+            const dropdownOptions = response.data.map((item) => ({
+              label: item.title,
+              value: item.id,
+            }));
+            setArticleTypeOptions(dropdownOptions);
+          }
+        } catch (error) {
+          console.error('Failed to load article types:', error);
+        }
+      };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -88,12 +105,12 @@ const ArticleFormMolecule = () => {
         }
     };
     const [journalOptions, setjournalOptions] = useState([]);
-
-    const articleTypeOptions = [
-        { value: 0, label: "select" },
-        { value: 1, label: "Research" },
-        { value: 2, label: "Review" },
-    ];
+    const [articleTypeOptions, setArticleTypeOptions] = useState([]);
+    // const articleTypeOptions = [
+    //     { value: 0, label: "select" },
+    //     { value: 1, label: "Research" },
+    //     { value: 2, label: "Review" },
+    // ];
     function journalsDropdown() {
         window.apiRequest(`${getJournalsForDropdown}`).then((response) => {
             if (response?.success) {
@@ -103,23 +120,20 @@ const ArticleFormMolecule = () => {
     }
     useEffect(() => {
         journalsDropdown();
+        fetchArticleTypes();
         if (formData.edit) {
             window
                 .apiRequest(`${getArticel}/${formData.edit}`)
                 .then((response) => {
                     if (response?.success) {
                         const responseData = response.data;
-                        // console.log(
-                        //     articleTypeOptions[responseData.articleType]
-                        // );
+                        // console.log(articleTypeOptions);
                         setFormData({
                             ...formData,
                             title: responseData.title,
                             doi: responseData.doi,
                             journal: responseData.journal,
-                            articleType:
-                                articleTypeOptions[responseData.articleType] ??
-                                [],
+                            articleType:responseData.article_type,
                             authorAffiliation: responseData.authorAffiliation,
                             author: responseData.author,
                             createdDate: responseData.createdDate,

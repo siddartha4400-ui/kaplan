@@ -65,6 +65,7 @@ class SliderController extends Controller
                     //     'issue'
                     // ])->
                     with([
+                        'articleType',
                         'journal' => function ($query) {
                             $query->with([
                                 'photoFile' => function ($query) {

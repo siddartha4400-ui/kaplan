@@ -58,6 +58,12 @@ export default function Dashboard() {
                                 >
                                     Our editors
                                 </Link>
+                                <Link
+                                    href="/articel-types"
+                                    className="px-4 py-2 bg-blue-500 text-white rounded"
+                                >
+                                   create articel types
+                                </Link>
                             </div>
                         </div>
 
@@ -82,6 +88,12 @@ export default function Dashboard() {
                                     className="px-4 py-2 bg-green-500 text-white rounded"
                                 >
                                     View Editors
+                                </Link>
+                                <Link
+                                    href="/table?table=editors"
+                                    className="px-4 py-2 bg-green-500 text-white rounded"
+                                >
+                                    View articel types
                                 </Link>
                             </div>
                         </div>

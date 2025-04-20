@@ -12,6 +12,7 @@ use App\Http\Controllers\EditorController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\JournalController;
+use App\Http\Controllers\ArticleTypesController;
 
 Route::apiResource('journals', JournalController::class);
 Route::post('/upload', [FileServices::class, 'insertFile']);
@@ -29,3 +30,5 @@ Route::get('/get_journals/{from}', [JournalController::class, 'getJournalsContro
 Route::post('/slider_store/{key}', [SliderController::class, 'store']);
 Route::get('/slider_get/{key}', [SliderController::class, 'getSliderData']);
 Route::get('/get_articles/{key}/{journal}/{issue}', [SliderController::class, 'getArticlesData']);
+Route::post('/post_articel_type', [ArticleTypesController::class, 'postArticel']);
+Route::get('/get_all_articel_types', [ArticleTypesController::class, 'getAllArticles']);

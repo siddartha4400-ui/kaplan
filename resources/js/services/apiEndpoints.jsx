@@ -43,3 +43,9 @@ export const slider_store = REGEX_URL + "slider_store";
 export const slider_get = REGEX_URL + "slider_get";
 
 export const get_articles = REGEX_URL + "get_articles";
+
+export const get_all_articel_types = REGEX_URL + "get_all_articel_types";
+
+export const post_articel_type = REGEX_URL + "post_articel_type";
+
+export const get_articel_type = REGEX_URL + "get_articel_type";

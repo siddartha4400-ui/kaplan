@@ -2,10 +2,11 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use App\Models\Journal;
 use Carbon\Carbon;
+use App\Models\Journal;
+use App\Models\ArticleType;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Article extends Model
 {
@@ -35,6 +36,10 @@ class Article extends Model
     {
         return $this->belongsTo(Journal::class, 'journal', 'id');
     }
+    public function articleType()
+    {
+        return $this->belongsTo(ArticleType::class, 'articleType', 'id');
+    }
     public function editArtuicleData($id)
     {
         $data = Article::where('id', $id)
@@ -42,6 +47,9 @@ class Article extends Model
                 $query->select(['fid', 'fid as fileId', 'file_path as filePath', 'file_name as filename']);
             }])
             ->with(['journal' => function ($query) {
+                $query->select(['id', 'id as value', 'title as label']);
+            }])
+            ->with(['articleType' => function ($query) {
                 $query->select(['id', 'id as value', 'title as label']);
             }])
             ->first(); // use first() instead of get()[0]

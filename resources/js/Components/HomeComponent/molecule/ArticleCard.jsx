@@ -143,7 +143,7 @@ const ArticleCard = ({ article, latestArticle }) => {
         <div className="card mb-4 border-0 shadow-sm p-2 border-bottom ">
             <div className="card-header d-flex justify-content-between align-items-center">
                 <span className="fw-bold text-capitalize">
-                    {article.articleType}
+                    {article.article_type.title}
                 </span>
                 <div className="d-flex align-items-center">
                     <span className="me-2 fw-semibold">

@@ -132,6 +132,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/our-editors-form', function () {
         return Inertia::render('OurEditors');
     });
+    Route::get('/articel-types', function () {
+        return Inertia::render('ArticelTypes');
+    });
 });
 
 Route::middleware('auth')->group(function () {

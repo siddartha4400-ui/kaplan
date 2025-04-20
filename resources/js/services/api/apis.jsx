@@ -4,6 +4,9 @@ import {
     slider_get,
     get_articles,
     getEditorsForDropdown,
+    get_all_articel_types,
+    post_articel_type,
+    get_articel_type,
 } from "../apiEndpoints";
 
 export const getJournals = async (data) => {
@@ -89,3 +92,29 @@ export const getArticles = async (key, journal = 0, issue = 0) => {
 // if you want articles in dashboard =>getArticles('dashboard');
 // if you want articles in article in press =>getArticles('article_in_press' ,journalid);
 // if you want articles in archive =>getArticles('archive' ,journalid ,issue);
+export const getAllArticleTypesApi = async () => {
+    const editorResponse = await window.apiRequest(get_all_articel_types);
+    return editorResponse;
+};
+export const postArticleTypeApi = async (data) => {
+    try {
+        const response = await window.apiRequest(
+            `${post_articel_type}`,
+            "post",
+            data
+        );
+
+        if (response?.success) {
+            // console.log(response.data);
+            return response.data;
+            // return Inertia.visit(`/table?table=editors`);
+            // alert("Form submitted successfully!");
+        } else {
+            console.warn("Unexpected response:", response);
+            // alert(response.message || "Something went wrong!");
+        }
+    } catch (error) {
+        console.error("Error submitting form:", error);
+        // alert("Failed to submit the form.");
+    }
+};
