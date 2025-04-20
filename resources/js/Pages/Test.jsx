@@ -9,7 +9,7 @@ const Test = () => {
             // keys => dashboard,article_in_press,current_issue,archive
             const res = await editorsData(); // ✅ wait for the resolved data
             // const res = await getJournals("journals"); // ✅ wait for the resolved data
-            console.log("API Resolved Data:", res);
+            // console.log("API Resolved Data:", res);
             setResponse(res); // ✅ set the actual data, not the Promise
         };
 

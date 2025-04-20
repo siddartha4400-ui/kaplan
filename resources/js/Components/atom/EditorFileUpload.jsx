@@ -15,7 +15,7 @@ function EditorFileUpload({ onChange, name, value, defaultHeight = '100px', list
 
   useEffect(() => {
     editorRef.current = {
-      CKEditor: require("@ckeditor/ckeditor5-react").CKEditor, 
+      CKEditor: require("@ckeditor/ckeditor5-react").CKEditor,
       ClassicEditor: require("ckeditor5-build-classic-plus"),
     };
     setEditorLoaded(true);
@@ -57,7 +57,7 @@ function MyCustomUploadAdapterPlugin(editor, setState) {
           const file = await loader.file;
           const uploadResult = await handleFile.uploadFile([file], "", "");
           const fileData = uploadResult.data[0];
-        console.log(fileData)
+        // console.log(fileData)
           const fileUrl = `${process.env.NEXT_PUBLIC_APP_BACKEND_URL + fileData.file_path}`;
           // const anchorTag = `<a href="${fileUrl}" target="_blank">${fileData.file_name}</a>&zwnj;`;
           const anchorTag = `<a href="${fileUrl}" target="_blank"><img src="${fileUrl}" alt="image.png" /></a>&zwnj;`;
@@ -69,7 +69,7 @@ function MyCustomUploadAdapterPlugin(editor, setState) {
             editor.model.insertContent(modelFragment);
           });
 
-          return { default: fileUrl }; // CKEditor requires `default` key 
+          return { default: fileUrl }; // CKEditor requires `default` key
         } catch (error) {
           console.error('Error during file upload', error);
           throw error;
@@ -83,7 +83,7 @@ function PasteAsAnchorPlugin(editor) {
   editor.plugins.get("Clipboard").on("inputTransformation", (evt, data) => {
     let html = data.dataTransfer.getData("text/html") || data.dataTransfer.getData("text/plain");
 
-  
+
 
     if (html) {
       // Remove JavaScript event handlers like onclick, onmouseover, etc.
@@ -115,7 +115,7 @@ function PasteAsAnchorPlugin(editor) {
       // Remove unnecessary nested span tags that may interfere
       html = html.replace(/<span[^>]*>(.*?)<\/span>/gi, "$1");
 
-      
+
 
       // Apply cleaned-up content to the editor
       data.content = editor.data.processor.toView(html);

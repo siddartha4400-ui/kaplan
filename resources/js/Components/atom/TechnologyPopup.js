@@ -1,5 +1,5 @@
 const TechnologyPopup = ({ header, descriptionValues, popupActionClose ,state,onChangeRadio}) => {
-    console.log(state.popdesc,"state")
+    // console.log(state.popdesc,"state")
   return (
     <div className={`modal d-block scan_popup`} id="myModal">
       <div

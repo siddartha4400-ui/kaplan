@@ -89,7 +89,7 @@ export default function JournalFormOrganisam() {
                     );
                     if (journalResponse?.success) {
                         const responseData = journalResponse.data;
-                        console.log(responseData);
+                        // console.log(responseData);
                         setFormData((prev) => ({
                             ...prev,
                             ...responseData,
@@ -127,7 +127,7 @@ export default function JournalFormOrganisam() {
             console.error("Error submitting form:", error);
         }
     };
-    console.log(formData);
+    // console.log(formData);
     return (
         <JournalFormMolecule
             {...{

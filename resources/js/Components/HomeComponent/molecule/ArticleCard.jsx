@@ -138,7 +138,7 @@ const DiscriptionArticalCard = ({ article }) => {
 };
 
 const ArticleCard = ({ article, latestArticle }) => {
-    console.log(article);
+    // console.log(article);
     return (
         <div className="card mb-4 border-0 shadow-sm p-2 border-bottom ">
             <div className="card-header d-flex justify-content-between align-items-center">

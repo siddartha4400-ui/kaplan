@@ -9,7 +9,7 @@ const ImageSlider = () => {
     useEffect(() => {
         getSlider(1)
             .then((res) => {
-                console.log("Slider API Response:", res);
+                // console.log("Slider API Response:", res);
 
                 const jsonData = res?.json; // ✅ FIXED THIS LINE
 
@@ -59,7 +59,8 @@ const ImageSlider = () => {
                             index === 0 ? "active" : ""
                         }`}
                         style={{ height: "100%" }}
-                    >{console.log(slide.src)}
+                    >
+                        {/* {console.log(slide.src)} */}
                         <img
                             src={slide.src}
                             className="d-block w-100"

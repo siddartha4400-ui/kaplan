@@ -10,7 +10,7 @@ const EditorSlider = () => {
     useEffect(() => {
         getSlider(3)
             .then((res) => {
-                console.log("Sidebar:", res);
+                // console.log("Sidebar:", res);
                 const jsonData = res?.json?.editors || [];
                 setEditorsData(jsonData);
             })

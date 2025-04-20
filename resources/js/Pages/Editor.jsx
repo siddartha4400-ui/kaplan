@@ -5,7 +5,7 @@ export default function Editor1() {
     const [content, setContent] = useState("");
 
     const handleEditorChange = (newContent) => {
-        console.log("Editor Content:", newContent);
+        // console.log("Editor Content:", newContent);
         setContent(newContent); // Update state
     };
 

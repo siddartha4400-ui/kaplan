@@ -11,7 +11,7 @@ export const getJournals = async (data) => {
         const response = await window.apiRequest(`${getJournalsApi}/${data}`);
 
         if (response?.success) {
-            console.log(response.data);
+            // console.log(response.data);
             return response.data;
             // return Inertia.visit(`/table?table=editors`);
             // alert("Form submitted successfully!");
@@ -33,7 +33,7 @@ export const storeSlider = async (data, key) => {
         );
 
         if (response?.success) {
-            console.log(response.data);
+            // console.log(response.data);
             return response.data;
             // return Inertia.visit(`/table?table=editors`);
             // alert("Form submitted successfully!");

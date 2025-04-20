@@ -102,10 +102,15 @@ class Journal extends Model
     }
     public function getJournalsModle($context)
     {
-        // Start the base query with `id`, `title`, `photoOurJournal`, and `photo`
-        $query = Journal::select(['id', 'title', 'photoOurJournal', 'photo' ,'shortname'])->limit(8);
+        // Start the base query with `id`, `title`, `photoOurJournal`, `photo`, `shortname`
+        $query = Journal::select(['id', 'title', 'photoOurJournal', 'photo', 'shortname' ,'issno']);
 
-        // Dynamically determine which relationship to load based on the context
+        // Apply limit only if context is 'dashboard'
+        if ($context == 'dashboard') {
+            $query->limit(8);
+        }
+
+        // Choose the relationship based on context
         $relationship = ($context == 'dashboard') ? 'photoOurJournalFile' : 'photoFile';
 
         $query->with([
@@ -114,7 +119,7 @@ class Journal extends Model
             }
         ]);
 
-        // Execute the query and return as an array
+        // Execute and return as array
         return $query->get()->toArray();
     }
 }

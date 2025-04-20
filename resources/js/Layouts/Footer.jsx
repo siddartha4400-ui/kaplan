@@ -22,20 +22,20 @@ const Footer = () => {
   // Form submission handler
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.mail)) {
       setEmailError('Invalid email address.');
       return;
     }
-    
+
     setEmailError('');
-    
+
     // Here you would typically send the data to your backend
-    console.log('Form submitted:', formData);
+    // console.log('Form submitted:', formData);
     // Example: axios.post('/getdatafromforms.php', formData)
-    
+
     // Reset form after submission
     setFormData({
       name: '',
@@ -207,7 +207,7 @@ const Footer = () => {
         __html: `
           document.addEventListener('contextmenu', function (e) {
             e.preventDefault(); // Disable right-click menu
-          }); 
+          });
           document.addEventListener('keydown', function (e) {
             if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
               e.preventDefault(); // Disable F12 and Ctrl+Shift+I

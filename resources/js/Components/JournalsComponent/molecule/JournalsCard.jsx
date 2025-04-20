@@ -1,15 +1,16 @@
 import React from "react";
 
 const JournalCard = ({ journal }) => {
+    // console.log(journal);
     return (
         <div className="card journal-card">
             <div className="card-body h-100 d-flex flex-column justify-content-between">
                 <div className="row g-0 h-100 p-3">
                     <div className="col-md-4 ">
                         <img
-                            src={journal.image}
+                            src={journal.photo_file.file_path}
                             className="img-fluid h-100 w-100 rounded-start object-fit-cover"
-                            alt={journal.name}
+                            alt={journal.title}
                             style={{
                                 objectFit: "cover",
                                 height: "100%",
@@ -19,14 +20,16 @@ const JournalCard = ({ journal }) => {
                     </div>
                     <div className="col-md-8 d-flex flex-column ps-3">
                         <text className="card-title fw-bold">
-                            {journal.name}
+                            {journal.title}
                         </text>
                         <small className="text-muted card-text">
-                            ISSN: {journal.issn || "XXXX-XXXX"}
+                            ISSN: {journal.issno || "XXXX-XXXX"}
                         </small>
                         <div className="d-flex justify-content-between align-items-center ">
                             <div className="d-flex">
-                                <text className="card-text">WJAST</text>
+                                <text className="card-text">
+                                    {journal.shortname}
+                                </text>
                                 <i class="ci-unlocked ms-2"></i>
                             </div>
                             <a
