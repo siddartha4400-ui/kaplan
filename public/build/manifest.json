@@ -135,10 +135,6 @@
       "_apiEndpoints-DYi1yudi.js"
     ]
   },
-  "_app-w-E8WSPG.css": {
-    "file": "assets/app-w-E8WSPG.css",
-    "src": "_app-w-E8WSPG.css"
-  },
   "_customAlert-Bcmd4Nz0.js": {
     "file": "assets/customAlert-Bcmd4Nz0.js",
     "name": "customAlert"
@@ -195,6 +191,11 @@
     "assets": [
       "assets/westland_publisher_logo-CrpTnf-n.png"
     ]
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-w-E8WSPG.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
   },
   "resources/fonts/cartzilla-icons.svg": {
     "file": "assets/cartzilla-icons-CQ8r_kEJ.svg",
