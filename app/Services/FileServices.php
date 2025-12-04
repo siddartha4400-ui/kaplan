@@ -31,7 +31,7 @@ class FileServices
             // Store file in dynamic folder inside 'uploads/'
             $path = $file->store("uploads/$folderName", 'public');
             $fileData = $this->file_object->createfile($file, $path);
-            // storeCustomLogs($fileData, 'siddulog');
+            storeCustomLogs($fileData, 'siddulog');
             return response()->json([
                 'fileId'   => $fileData->fid, // Return file ID
                 'filePath' => asset($fileData->file_path),
