@@ -16,6 +16,7 @@ use App\Http\Controllers\ArticleTypesController;
 use App\Http\Controllers\ActivityController;
 
 Route::get('/activities', [ActivityController::class, 'index']);
+Route::get('/holidays', [ActivityController::class, 'holidaysJsonData']);
 // Route::apiResource('journals', JournalController::class);
 // Route::post('/upload', [FileServices::class, 'insertFile']);
 // Route::post('/create_journal', [JournalController::class, 'createJournalController']);

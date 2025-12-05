@@ -16,9 +16,11 @@ Route::get('/login', function () {
 
 Route::get('/', function () {
     $activities = app(\App\Http\Controllers\ActivityController::class)->index();
+    // $holidays = app(\App\Http\Controllers\ActivityController::class)->holidaysJsonData();
 
     return Inertia::render('keplan/Shedule', [
-        'activities' => $activities
+        'activities' => $activities,
+        // 'holidays' => $holidays
     ]);
 });
 
