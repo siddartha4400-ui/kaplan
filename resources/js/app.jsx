@@ -21,7 +21,8 @@ import '../css/common.css'
 
 const appName = import.meta.env.VITE_APP_NAME;
 createInertiaApp({
-    title: (title) => `${title} - ${appName}`,
+    title: (title) => `Kaplan | Shedule`,
+    // title: (title) => `${title} - ${appName}`,
     resolve: (name) =>
         resolvePageComponent(
             `./Pages/${name}.jsx`,
