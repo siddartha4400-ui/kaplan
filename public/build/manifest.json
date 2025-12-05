@@ -3,16 +3,16 @@
     "file": "assets/About-ufZNVFzd.css",
     "src": "_About-ufZNVFzd.css"
   },
-  "_AuthenticatedLayout-CzDaAjsI.js": {
-    "file": "assets/AuthenticatedLayout-CzDaAjsI.js",
+  "_AuthenticatedLayout-B9xwEJjs.js": {
+    "file": "assets/AuthenticatedLayout-B9xwEJjs.js",
     "name": "AuthenticatedLayout",
     "imports": [
       "resources/js/app.jsx",
-      "_transition-j7PtlSyX.js"
+      "_transition-utVJhdWf.js"
     ]
   },
-  "_CommonTextComponent-DmT1Y8mp.js": {
-    "file": "assets/CommonTextComponent-DmT1Y8mp.js",
+  "_CommonTextComponent-9C7B_SwL.js": {
+    "file": "assets/CommonTextComponent-9C7B_SwL.js",
     "name": "CommonTextComponent",
     "imports": [
       "resources/js/app.jsx",
@@ -23,19 +23,15 @@
     "file": "assets/CommonValues-CVt74OTQ.js",
     "name": "CommonValues"
   },
-  "_Editor-fd4YXS39.js": {
-    "file": "assets/Editor-fd4YXS39.js",
+  "_Editor-DbZ_9aVl.js": {
+    "file": "assets/Editor-DbZ_9aVl.js",
     "name": "Editor",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_FooterTestimonials-DEnUtzqi.css": {
-    "file": "assets/FooterTestimonials-DEnUtzqi.css",
-    "src": "_FooterTestimonials-DEnUtzqi.css"
-  },
-  "_FooterTestimonials-Dxhs8jAQ.js": {
-    "file": "assets/FooterTestimonials-Dxhs8jAQ.js",
+  "_FooterTestimonials-Ct7-lo7I.js": {
+    "file": "assets/FooterTestimonials-Ct7-lo7I.js",
     "name": "FooterTestimonials",
     "imports": [
       "resources/js/app.jsx",
@@ -60,22 +56,26 @@
       "assets/Healthcare-Services-Training-B4BvGkY8.jpg"
     ]
   },
-  "_GuestLayout-BsNTQ5d_.js": {
-    "file": "assets/GuestLayout-BsNTQ5d_.js",
+  "_FooterTestimonials-DEnUtzqi.css": {
+    "file": "assets/FooterTestimonials-DEnUtzqi.css",
+    "src": "_FooterTestimonials-DEnUtzqi.css"
+  },
+  "_GuestLayout-2vjHt-Gh.js": {
+    "file": "assets/GuestLayout-2vjHt-Gh.js",
     "name": "GuestLayout",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_GuidelinceComponent-A3mimC42.js": {
-    "file": "assets/GuidelinceComponent-A3mimC42.js",
+  "_GuidelinceComponent-CTETQJWn.js": {
+    "file": "assets/GuidelinceComponent-CTETQJWn.js",
     "name": "GuidelinceComponent",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_Header-DIiIRh87.js": {
-    "file": "assets/Header-DIiIRh87.js",
+  "_Header-Bo4Dn8Rz.js": {
+    "file": "assets/Header-Bo4Dn8Rz.js",
     "name": "Header",
     "imports": [
       "resources/js/app.jsx",
@@ -89,8 +89,8 @@
     "file": "assets/Header-Ddum0KYR.css",
     "src": "_Header-Ddum0KYR.css"
   },
-  "_InputLabel-Da-Wf_94.js": {
-    "file": "assets/InputLabel-Da-Wf_94.js",
+  "_InputLabel-agxPQnYI.js": {
+    "file": "assets/InputLabel-agxPQnYI.js",
     "name": "InputLabel",
     "imports": [
       "resources/js/app.jsx"
@@ -100,8 +100,8 @@
     "file": "assets/LatestArticles-B6pFSFYP.css",
     "src": "_LatestArticles-B6pFSFYP.css"
   },
-  "_LatestArticles-CiJJECVE.js": {
-    "file": "assets/LatestArticles-CiJJECVE.js",
+  "_LatestArticles-BPd3nQM2.js": {
+    "file": "assets/LatestArticles-BPd3nQM2.js",
     "name": "LatestArticles",
     "imports": [
       "resources/js/app.jsx"
@@ -110,15 +110,15 @@
       "assets/LatestArticles-B6pFSFYP.css"
     ]
   },
-  "_PrimaryButton-BzyqPULf.js": {
-    "file": "assets/PrimaryButton-BzyqPULf.js",
+  "_PrimaryButton-Dr1rAYuT.js": {
+    "file": "assets/PrimaryButton-Dr1rAYuT.js",
     "name": "PrimaryButton",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_TextInput-7tNwmLWY.js": {
-    "file": "assets/TextInput-7tNwmLWY.js",
+  "_TextInput-DE2fv0nh.js": {
+    "file": "assets/TextInput-DE2fv0nh.js",
     "name": "TextInput",
     "imports": [
       "resources/js/app.jsx"
@@ -139,49 +139,49 @@
     "file": "assets/customAlert-Bcmd4Nz0.js",
     "name": "customAlert"
   },
-  "_helper-BCQ3X20O.js": {
-    "file": "assets/helper-BCQ3X20O.js",
+  "_helper-BvRfVK3Y.js": {
+    "file": "assets/helper-BvRfVK3Y.js",
     "name": "helper",
     "imports": [
       "_apiEndpoints-DYi1yudi.js",
-      "_index-B-LOpo6u.js",
+      "_index-BYAZQntW.js",
       "resources/js/app.jsx"
     ]
   },
-  "_index-B-LOpo6u.js": {
-    "file": "assets/index-B-LOpo6u.js",
+  "_index-BF0mA5jO.js": {
+    "file": "assets/index-BF0mA5jO.js",
     "name": "index",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_index-Cd0VuryW.js": {
-    "file": "assets/index-Cd0VuryW.js",
+  "_index-BYAZQntW.js": {
+    "file": "assets/index-BYAZQntW.js",
     "name": "index",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_react-select.esm--I57dcfR.js": {
-    "file": "assets/react-select.esm--I57dcfR.js",
+  "_react-select.esm-BThIqxQV.js": {
+    "file": "assets/react-select.esm-BThIqxQV.js",
     "name": "react-select.esm",
     "imports": [
       "resources/js/app.jsx",
-      "_index-Cd0VuryW.js"
+      "_index-BF0mA5jO.js"
     ]
   },
-  "_transition-j7PtlSyX.js": {
-    "file": "assets/transition-j7PtlSyX.js",
+  "_transition-utVJhdWf.js": {
+    "file": "assets/transition-utVJhdWf.js",
     "name": "transition",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_useQueryParams-By74CzXb.js": {
-    "file": "assets/useQueryParams-By74CzXb.js",
+  "_useQueryParams-CQd7i48z.js": {
+    "file": "assets/useQueryParams-CQd7i48z.js",
     "name": "useQueryParams",
     "imports": [
-      "_index-B-LOpo6u.js",
+      "_index-BYAZQntW.js",
       "resources/js/app.jsx"
     ]
   },
@@ -282,15 +282,15 @@
     "src": "resources/img/westland_publisher_logo.png"
   },
   "resources/js/Pages/About.jsx": {
-    "file": "assets/About-BhvoFScm.js",
+    "file": "assets/About-Ciz9lXHO.js",
     "name": "About",
     "src": "resources/js/Pages/About.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_CommonTextComponent-DmT1Y8mp.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_CommonTextComponent-9C7B_SwL.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js",
@@ -301,7 +301,7 @@
     ]
   },
   "resources/js/Pages/App.jsx": {
-    "file": "assets/App-v0mJrytm.js",
+    "file": "assets/App-DUZcgduR.js",
     "name": "App",
     "src": "resources/js/Pages/App.jsx",
     "isDynamicEntry": true,
@@ -314,7 +314,7 @@
     ]
   },
   "resources/js/Pages/ArticelTypes.jsx": {
-    "file": "assets/ArticelTypes-dSK3NvAY.js",
+    "file": "assets/ArticelTypes-d2TtktQ5.js",
     "name": "ArticelTypes",
     "src": "resources/js/Pages/ArticelTypes.jsx",
     "isDynamicEntry": true,
@@ -325,32 +325,32 @@
     ]
   },
   "resources/js/Pages/ArticleForm.jsx": {
-    "file": "assets/ArticleForm-DjJ5V2OL.js",
+    "file": "assets/ArticleForm-CejDkohN.js",
     "name": "ArticleForm",
     "src": "resources/js/Pages/ArticleForm.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_react-select.esm--I57dcfR.js",
-      "_Editor-fd4YXS39.js",
-      "_helper-BCQ3X20O.js",
-      "_useQueryParams-By74CzXb.js",
+      "_react-select.esm-BThIqxQV.js",
+      "_Editor-DbZ_9aVl.js",
+      "_helper-BvRfVK3Y.js",
+      "_useQueryParams-CQd7i48z.js",
       "_apiEndpoints-DYi1yudi.js",
-      "_index-B-LOpo6u.js",
+      "_index-BYAZQntW.js",
       "_apis-CbdJYn5R.js",
-      "_index-Cd0VuryW.js"
+      "_index-BF0mA5jO.js"
     ]
   },
   "resources/js/Pages/AssociateEditorGuidelines.jsx": {
-    "file": "assets/AssociateEditorGuidelines-B_HHqeSn.js",
+    "file": "assets/AssociateEditorGuidelines-B0B3vaHS.js",
     "name": "AssociateEditorGuidelines",
     "src": "resources/js/Pages/AssociateEditorGuidelines.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -360,90 +360,90 @@
     ]
   },
   "resources/js/Pages/Auth/ConfirmPassword.jsx": {
-    "file": "assets/ConfirmPassword-DQ5zw__a.js",
+    "file": "assets/ConfirmPassword-DFFJNMM6.js",
     "name": "ConfirmPassword",
     "src": "resources/js/Pages/Auth/ConfirmPassword.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_TextInput-7tNwmLWY.js",
-      "_InputLabel-Da-Wf_94.js",
-      "_PrimaryButton-BzyqPULf.js",
-      "_GuestLayout-BsNTQ5d_.js"
+      "_TextInput-DE2fv0nh.js",
+      "_InputLabel-agxPQnYI.js",
+      "_PrimaryButton-Dr1rAYuT.js",
+      "_GuestLayout-2vjHt-Gh.js"
     ]
   },
   "resources/js/Pages/Auth/ForgotPassword.jsx": {
-    "file": "assets/ForgotPassword-Dq6tC7WU.js",
+    "file": "assets/ForgotPassword-BP1izeho.js",
     "name": "ForgotPassword",
     "src": "resources/js/Pages/Auth/ForgotPassword.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_TextInput-7tNwmLWY.js",
-      "_PrimaryButton-BzyqPULf.js",
-      "_GuestLayout-BsNTQ5d_.js"
+      "_TextInput-DE2fv0nh.js",
+      "_PrimaryButton-Dr1rAYuT.js",
+      "_GuestLayout-2vjHt-Gh.js"
     ]
   },
   "resources/js/Pages/Auth/Login.jsx": {
-    "file": "assets/Login-BGqRW40E.js",
+    "file": "assets/Login-CeS84YVf.js",
     "name": "Login",
     "src": "resources/js/Pages/Auth/Login.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_TextInput-7tNwmLWY.js",
-      "_InputLabel-Da-Wf_94.js",
-      "_PrimaryButton-BzyqPULf.js",
-      "_GuestLayout-BsNTQ5d_.js"
+      "_TextInput-DE2fv0nh.js",
+      "_InputLabel-agxPQnYI.js",
+      "_PrimaryButton-Dr1rAYuT.js",
+      "_GuestLayout-2vjHt-Gh.js"
     ]
   },
   "resources/js/Pages/Auth/Register.jsx": {
-    "file": "assets/Register-CabY1C24.js",
+    "file": "assets/Register-CDo9-t2G.js",
     "name": "Register",
     "src": "resources/js/Pages/Auth/Register.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_TextInput-7tNwmLWY.js",
-      "_InputLabel-Da-Wf_94.js",
-      "_PrimaryButton-BzyqPULf.js",
-      "_GuestLayout-BsNTQ5d_.js"
+      "_TextInput-DE2fv0nh.js",
+      "_InputLabel-agxPQnYI.js",
+      "_PrimaryButton-Dr1rAYuT.js",
+      "_GuestLayout-2vjHt-Gh.js"
     ]
   },
   "resources/js/Pages/Auth/ResetPassword.jsx": {
-    "file": "assets/ResetPassword-Ixcjcr8P.js",
+    "file": "assets/ResetPassword-Bs8xa5vu.js",
     "name": "ResetPassword",
     "src": "resources/js/Pages/Auth/ResetPassword.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_TextInput-7tNwmLWY.js",
-      "_InputLabel-Da-Wf_94.js",
-      "_PrimaryButton-BzyqPULf.js",
-      "_GuestLayout-BsNTQ5d_.js"
+      "_TextInput-DE2fv0nh.js",
+      "_InputLabel-agxPQnYI.js",
+      "_PrimaryButton-Dr1rAYuT.js",
+      "_GuestLayout-2vjHt-Gh.js"
     ]
   },
   "resources/js/Pages/Auth/VerifyEmail.jsx": {
-    "file": "assets/VerifyEmail-xqshY39k.js",
+    "file": "assets/VerifyEmail-BnW_dBcF.js",
     "name": "VerifyEmail",
     "src": "resources/js/Pages/Auth/VerifyEmail.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_PrimaryButton-BzyqPULf.js",
-      "_GuestLayout-BsNTQ5d_.js"
+      "_PrimaryButton-Dr1rAYuT.js",
+      "_GuestLayout-2vjHt-Gh.js"
     ]
   },
   "resources/js/Pages/AuthorsGuidelines.jsx": {
-    "file": "assets/AuthorsGuidelines-tMjmA-vZ.js",
+    "file": "assets/AuthorsGuidelines-DEAm6ewj.js",
     "name": "AuthorsGuidelines",
     "src": "resources/js/Pages/AuthorsGuidelines.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -453,16 +453,16 @@
     ]
   },
   "resources/js/Pages/CommonTextPage.jsx": {
-    "file": "assets/CommonTextPage-VQX_FYZr.js",
+    "file": "assets/CommonTextPage-DOPh8uIv.js",
     "name": "CommonTextPage",
     "src": "resources/js/Pages/CommonTextPage.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
-      "_CommonTextComponent-DmT1Y8mp.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
+      "_CommonTextComponent-9C7B_SwL.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js",
@@ -473,13 +473,13 @@
     ]
   },
   "resources/js/Pages/ContactUs.jsx": {
-    "file": "assets/ContactUs-DQL2wkhS.js",
+    "file": "assets/ContactUs-Bx9Lps0Q.js",
     "name": "ContactUs",
     "src": "resources/js/Pages/ContactUs.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
+      "_Header-Bo4Dn8Rz.js",
       "_westland_publisher_logo-DNSkRFfY.js"
     ],
     "css": [
@@ -487,57 +487,57 @@
     ]
   },
   "resources/js/Pages/Dashboard.jsx": {
-    "file": "assets/Dashboard-CtkwBeFw.js",
+    "file": "assets/Dashboard-CmsvlYqr.js",
     "name": "Dashboard",
     "src": "resources/js/Pages/Dashboard.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AuthenticatedLayout-CzDaAjsI.js",
-      "_transition-j7PtlSyX.js"
+      "_AuthenticatedLayout-B9xwEJjs.js",
+      "_transition-utVJhdWf.js"
     ],
     "css": [
       "assets/app-w-E8WSPG.css"
     ]
   },
   "resources/js/Pages/Editor.jsx": {
-    "file": "assets/Editor-Cl9rUzgd.js",
+    "file": "assets/Editor-DOFWIQ-J.js",
     "name": "Editor",
     "src": "resources/js/Pages/Editor.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Editor-fd4YXS39.js"
+      "_Editor-DbZ_9aVl.js"
     ]
   },
   "resources/js/Pages/EditorForm.jsx": {
-    "file": "assets/EditorForm-w_M8wVVk.js",
+    "file": "assets/EditorForm-Dd49Ff6b.js",
     "name": "EditorForm",
     "src": "resources/js/Pages/EditorForm.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_react-select.esm--I57dcfR.js",
-      "_helper-BCQ3X20O.js",
-      "_useQueryParams-By74CzXb.js",
+      "_react-select.esm-BThIqxQV.js",
+      "_helper-BvRfVK3Y.js",
+      "_useQueryParams-CQd7i48z.js",
       "_apiEndpoints-DYi1yudi.js",
-      "_index-B-LOpo6u.js",
-      "_index-Cd0VuryW.js"
+      "_index-BYAZQntW.js",
+      "_index-BF0mA5jO.js"
     ],
     "css": [
       "assets/app-w-E8WSPG.css"
     ]
   },
   "resources/js/Pages/EditorGuidelines.jsx": {
-    "file": "assets/EditorGuidelines-Cn25dnqV.js",
+    "file": "assets/EditorGuidelines-CDlerMde.js",
     "name": "EditorGuidelines",
     "src": "resources/js/Pages/EditorGuidelines.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -547,15 +547,15 @@
     ]
   },
   "resources/js/Pages/EditorInChief.jsx": {
-    "file": "assets/EditorInChief-ZIs5Gk2S.js",
+    "file": "assets/EditorInChief-B_-gSwzF.js",
     "name": "EditorInChief",
     "src": "resources/js/Pages/EditorInChief.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -565,15 +565,15 @@
     ]
   },
   "resources/js/Pages/GrantsCoverLetter.jsx": {
-    "file": "assets/GrantsCoverLetter-DmS9ttuA.js",
+    "file": "assets/GrantsCoverLetter-BXbm_HbY.js",
     "name": "GrantsCoverLetter",
     "src": "resources/js/Pages/GrantsCoverLetter.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -583,48 +583,48 @@
     ]
   },
   "resources/js/Pages/Home.jsx": {
-    "file": "assets/Home-XJYYLP0y.js",
+    "file": "assets/Home-BSraCX9X.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_LatestArticles-CiJJECVE.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_LatestArticles-BPd3nQM2.js",
       "_apis-CbdJYn5R.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
       "_CommonValues-CVt74OTQ.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apiEndpoints-DYi1yudi.js"
     ]
   },
   "resources/js/Pages/Journalform.jsx": {
-    "file": "assets/Journalform-h0mlXAH5.js",
+    "file": "assets/Journalform-DWyWAFlb.js",
     "name": "Journalform",
     "src": "resources/js/Pages/Journalform.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_useQueryParams-By74CzXb.js",
-      "_helper-BCQ3X20O.js",
+      "_useQueryParams-CQd7i48z.js",
+      "_helper-BvRfVK3Y.js",
       "_apiEndpoints-DYi1yudi.js",
-      "_index-B-LOpo6u.js",
-      "_react-select.esm--I57dcfR.js",
-      "_Editor-fd4YXS39.js",
-      "_index-Cd0VuryW.js"
+      "_index-BYAZQntW.js",
+      "_react-select.esm-BThIqxQV.js",
+      "_Editor-DbZ_9aVl.js",
+      "_index-BF0mA5jO.js"
     ],
     "css": [
       "assets/app-w-E8WSPG.css"
     ]
   },
   "resources/js/Pages/Journals.jsx": {
-    "file": "assets/Journals-2edtI_tA.js",
+    "file": "assets/Journals-Cgcxk3Jn.js",
     "name": "Journals",
     "src": "resources/js/Pages/Journals.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
+      "_Header-Bo4Dn8Rz.js",
       "_apis-CbdJYn5R.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -635,15 +635,15 @@
     ]
   },
   "resources/js/Pages/LatestArticalTheory.jsx": {
-    "file": "assets/LatestArticalTheory-BTapQX0n.js",
+    "file": "assets/LatestArticalTheory-O9-oDv7l.js",
     "name": "LatestArticalTheory",
     "src": "resources/js/Pages/LatestArticalTheory.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_LatestArticles-CiJJECVE.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_LatestArticles-BPd3nQM2.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -653,15 +653,15 @@
     ]
   },
   "resources/js/Pages/ManuscriptSubmission.jsx": {
-    "file": "assets/ManuscriptSubmission-BR7sRfrK.js",
+    "file": "assets/ManuscriptSubmission-C1NfCfOU.js",
     "name": "ManuscriptSubmission",
     "src": "resources/js/Pages/ManuscriptSubmission.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -671,32 +671,32 @@
     ]
   },
   "resources/js/Pages/MembersIn.jsx": {
-    "file": "assets/MembersIn-Bju5zJpL.js",
+    "file": "assets/MembersIn-BJwc7Bxz.js",
     "name": "MembersIn",
     "src": "resources/js/Pages/MembersIn.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_helper-BCQ3X20O.js",
+      "_helper-BvRfVK3Y.js",
       "_apis-CbdJYn5R.js",
       "_customAlert-Bcmd4Nz0.js",
       "_apiEndpoints-DYi1yudi.js",
-      "_index-B-LOpo6u.js"
+      "_index-BYAZQntW.js"
     ],
     "css": [
       "assets/app-w-E8WSPG.css"
     ]
   },
   "resources/js/Pages/MembershipProgram.jsx": {
-    "file": "assets/MembershipProgram-Duit9F0z.js",
+    "file": "assets/MembershipProgram-CcMi3xX8.js",
     "name": "MembershipProgram",
     "src": "resources/js/Pages/MembershipProgram.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -706,7 +706,7 @@
     ]
   },
   "resources/js/Pages/Navbar.jsx": {
-    "file": "assets/Navbar-BmWnYdvm.js",
+    "file": "assets/Navbar-Bj4vda95.js",
     "name": "Navbar",
     "src": "resources/js/Pages/Navbar.jsx",
     "isDynamicEntry": true,
@@ -715,14 +715,14 @@
     ]
   },
   "resources/js/Pages/OpenAccess.jsx": {
-    "file": "assets/OpenAccess-ByqZohk2.js",
+    "file": "assets/OpenAccess-DjVz8Ooy.js",
     "name": "OpenAccess",
     "src": "resources/js/Pages/OpenAccess.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -732,29 +732,29 @@
     ]
   },
   "resources/js/Pages/OurEditors.jsx": {
-    "file": "assets/OurEditors-DE9UuJCM.js",
+    "file": "assets/OurEditors-BJjuZXX3.js",
     "name": "OurEditors",
     "src": "resources/js/Pages/OurEditors.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_react-select.esm--I57dcfR.js",
+      "_react-select.esm-BThIqxQV.js",
       "_apis-CbdJYn5R.js",
       "_customAlert-Bcmd4Nz0.js",
-      "_index-Cd0VuryW.js",
+      "_index-BF0mA5jO.js",
       "_apiEndpoints-DYi1yudi.js"
     ]
   },
   "resources/js/Pages/PeerReview.jsx": {
-    "file": "assets/PeerReview-DeTUBJqV.js",
+    "file": "assets/PeerReview-CYa_POHJ.js",
     "name": "PeerReview",
     "src": "resources/js/Pages/PeerReview.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -764,15 +764,15 @@
     ]
   },
   "resources/js/Pages/PoliciesAndEthics.jsx": {
-    "file": "assets/PoliciesAndEthics-DYjXru_s.js",
+    "file": "assets/PoliciesAndEthics-D_9Dp-1N.js",
     "name": "PoliciesAndEthics",
     "src": "resources/js/Pages/PoliciesAndEthics.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -782,15 +782,15 @@
     ]
   },
   "resources/js/Pages/ProcessingFee.jsx": {
-    "file": "assets/ProcessingFee-Db5inknT.js",
+    "file": "assets/ProcessingFee-CGBlHGjD.js",
     "name": "ProcessingFee",
     "src": "resources/js/Pages/ProcessingFee.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -800,72 +800,72 @@
     ]
   },
   "resources/js/Pages/Profile/Edit.jsx": {
-    "file": "assets/Edit-D4vAu3Lt.js",
+    "file": "assets/Edit-CuoV_R3q.js",
     "name": "Edit",
     "src": "resources/js/Pages/Profile/Edit.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AuthenticatedLayout-CzDaAjsI.js",
+      "_AuthenticatedLayout-B9xwEJjs.js",
       "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx",
       "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx",
       "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx",
-      "_transition-j7PtlSyX.js",
-      "_TextInput-7tNwmLWY.js",
-      "_InputLabel-Da-Wf_94.js",
-      "_index-Cd0VuryW.js",
-      "_PrimaryButton-BzyqPULf.js"
+      "_transition-utVJhdWf.js",
+      "_TextInput-DE2fv0nh.js",
+      "_InputLabel-agxPQnYI.js",
+      "_index-BF0mA5jO.js",
+      "_PrimaryButton-Dr1rAYuT.js"
     ]
   },
   "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx": {
-    "file": "assets/DeleteUserForm-DpEpf-kz.js",
+    "file": "assets/DeleteUserForm-2hKYbj8x.js",
     "name": "DeleteUserForm",
     "src": "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_TextInput-7tNwmLWY.js",
-      "_InputLabel-Da-Wf_94.js",
-      "_transition-j7PtlSyX.js",
-      "_index-Cd0VuryW.js"
+      "_TextInput-DE2fv0nh.js",
+      "_InputLabel-agxPQnYI.js",
+      "_transition-utVJhdWf.js",
+      "_index-BF0mA5jO.js"
     ]
   },
   "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx": {
-    "file": "assets/UpdatePasswordForm-CM3rJCuT.js",
+    "file": "assets/UpdatePasswordForm-Cwan7nzi.js",
     "name": "UpdatePasswordForm",
     "src": "resources/js/Pages/Profile/Partials/UpdatePasswordForm.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_TextInput-7tNwmLWY.js",
-      "_InputLabel-Da-Wf_94.js",
-      "_PrimaryButton-BzyqPULf.js",
-      "_transition-j7PtlSyX.js"
+      "_TextInput-DE2fv0nh.js",
+      "_InputLabel-agxPQnYI.js",
+      "_PrimaryButton-Dr1rAYuT.js",
+      "_transition-utVJhdWf.js"
     ]
   },
   "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx": {
-    "file": "assets/UpdateProfileInformationForm-BTBvZ3Ra.js",
+    "file": "assets/UpdateProfileInformationForm-Bo_oNGxA.js",
     "name": "UpdateProfileInformationForm",
     "src": "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_TextInput-7tNwmLWY.js",
-      "_InputLabel-Da-Wf_94.js",
-      "_PrimaryButton-BzyqPULf.js",
-      "_transition-j7PtlSyX.js"
+      "_TextInput-DE2fv0nh.js",
+      "_InputLabel-agxPQnYI.js",
+      "_PrimaryButton-Dr1rAYuT.js",
+      "_transition-utVJhdWf.js"
     ]
   },
   "resources/js/Pages/Reprints.jsx": {
-    "file": "assets/Reprints-CXItZgGo.js",
+    "file": "assets/Reprints-Df_5nYta.js",
     "name": "Reprints",
     "src": "resources/js/Pages/Reprints.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -875,15 +875,15 @@
     ]
   },
   "resources/js/Pages/ReviewerGuidelines.jsx": {
-    "file": "assets/ReviewerGuidelines-u5fj_8_h.js",
+    "file": "assets/ReviewerGuidelines-CJMk99-5.js",
     "name": "ReviewerGuidelines",
     "src": "resources/js/Pages/ReviewerGuidelines.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Header-DIiIRh87.js",
-      "_FooterTestimonials-Dxhs8jAQ.js",
-      "_GuidelinceComponent-A3mimC42.js",
+      "_Header-Bo4Dn8Rz.js",
+      "_FooterTestimonials-Ct7-lo7I.js",
+      "_GuidelinceComponent-CTETQJWn.js",
       "_westland_publisher_logo-DNSkRFfY.js",
       "_apis-CbdJYn5R.js",
       "_apiEndpoints-DYi1yudi.js"
@@ -893,33 +893,33 @@
     ]
   },
   "resources/js/Pages/Slaiderselector.jsx": {
-    "file": "assets/Slaiderselector-Cyhepq_-.js",
+    "file": "assets/Slaiderselector-BBhA55u6.js",
     "name": "Slaiderselector",
     "src": "resources/js/Pages/Slaiderselector.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_helper-BCQ3X20O.js",
+      "_helper-BvRfVK3Y.js",
       "_apis-CbdJYn5R.js",
       "_customAlert-Bcmd4Nz0.js",
       "_apiEndpoints-DYi1yudi.js",
-      "_index-B-LOpo6u.js"
+      "_index-BYAZQntW.js"
     ]
   },
   "resources/js/Pages/Table.jsx": {
-    "file": "assets/Table-Dhp0EbVT.js",
+    "file": "assets/Table-DYcTkDcQ.js",
     "name": "Table",
     "src": "resources/js/Pages/Table.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_useQueryParams-By74CzXb.js",
+      "_useQueryParams-CQd7i48z.js",
       "_apiEndpoints-DYi1yudi.js",
-      "_index-B-LOpo6u.js"
+      "_index-BYAZQntW.js"
     ]
   },
   "resources/js/Pages/Test.jsx": {
-    "file": "assets/Test-O2Pdaymz.js",
+    "file": "assets/Test-Cfq9zOqq.js",
     "name": "Test",
     "src": "resources/js/Pages/Test.jsx",
     "isDynamicEntry": true,
@@ -930,17 +930,26 @@
     ]
   },
   "resources/js/Pages/Welcome.jsx": {
-    "file": "assets/Welcome-B9LZP3-I.js",
+    "file": "assets/Welcome-Dh7Sc-Ci.js",
     "name": "Welcome",
     "src": "resources/js/Pages/Welcome.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_PrimaryButton-BzyqPULf.js"
+      "_PrimaryButton-Dr1rAYuT.js"
+    ]
+  },
+  "resources/js/Pages/keplan/Shedule.jsx": {
+    "file": "assets/Shedule-BOUTDddL.js",
+    "name": "Shedule",
+    "src": "resources/js/Pages/keplan/Shedule.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.jsx"
     ]
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-Crv3_633.js",
+    "file": "assets/app-DPh5tixL.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
@@ -987,7 +996,8 @@
       "resources/js/Pages/Slaiderselector.jsx",
       "resources/js/Pages/Table.jsx",
       "resources/js/Pages/Test.jsx",
-      "resources/js/Pages/Welcome.jsx"
+      "resources/js/Pages/Welcome.jsx",
+      "resources/js/Pages/keplan/Shedule.jsx"
     ],
     "css": [
       "assets/app-t0jaIRWj.css"

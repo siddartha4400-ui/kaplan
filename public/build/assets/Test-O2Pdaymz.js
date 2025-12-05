@@ -1,1 +1,0 @@
-import{r as t,j as s}from"./app-Crv3_633.js";import{e as n}from"./apis-CbdJYn5R.js";import"./apiEndpoints-DYi1yudi.js";const f=()=>{const[e,r]=t.useState(null);return t.useEffect(()=>{(async()=>{const a=await n();r(a)})()},[]),s.jsxs("div",{children:[s.jsx("h2",{children:"Raw API Response:"}),s.jsx("pre",{children:JSON.stringify(e,null,2)})]})};export{f as default};
