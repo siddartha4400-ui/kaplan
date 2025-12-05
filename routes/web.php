@@ -15,8 +15,12 @@ Route::get('/login', function () {
 });
 
 Route::get('/', function () {
-    return Inertia::render('keplan/Shedule');
-})->name('shedule');
+    $activities = app(\App\Http\Controllers\ActivityController::class)->index();
+
+    return Inertia::render('keplan/Shedule', [
+        'activities' => $activities
+    ]);
+});
 
 
 // Route::get('/home', function () {
