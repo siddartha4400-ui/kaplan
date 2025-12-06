@@ -23,6 +23,7 @@ class ActivityService
           public function filterActivities()
           {
                     $activities = collect($this->activity->fetchActivities()['activities'] ?? []);
+                    if ($activities->isEmpty()) return ['schedule' => [], 'holidays' => []];
                     $result = [];
                     $activitiesArray = [];
                     $totalTime = 0;

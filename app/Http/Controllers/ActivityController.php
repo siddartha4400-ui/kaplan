@@ -17,13 +17,13 @@ class ActivityController extends Controller
     public function index()
     {
         return tryCatchHelper(function () {
-            return apiResponse(true, 'successful', $this->activityService->filterActivities(), 201);
+            return apiResponse(true, 'successful', $this->activityService->filterActivities(), 200);
         });
     }
-    public function holidaysJsonData()
-    {
-        return tryCatchHelper(function () {
-            return apiResponse(true, 'successful', $this->holidayService->holidays, 201);
-        });
-    }
+    // public function holidaysJsonData()
+    // {
+    //     return tryCatchHelper(function () {
+    //         return apiResponse(true, 'successful', $this->holidayService->holidays, 201);
+    //     });
+    // }
 }

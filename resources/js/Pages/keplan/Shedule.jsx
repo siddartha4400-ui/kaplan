@@ -19,9 +19,9 @@ const formatDate = (dateString) => {
 };
 
 const Shedule = ({ activities }) => {
-          const rows = activities.original.data.shedule;
-          const holidays = activities.original.data.holidays;
-
+          const [rows, setRows] = useState(activities.original.data.shedule ?? []);
+          const holidays = activities.original.data.holidays ?? [];
+          console.log(rows)
           const [showModal, setShowModal] = useState(false);
 
           return (
@@ -46,7 +46,7 @@ const Shedule = ({ activities }) => {
                               {/* Add spacing because navbar is fixed */}
                               <div className="container py-5" style={{ paddingTop: "90px" }}>
                                         <div className="row justify-content-center">
-                                                  <div className="col-md-8">
+                                                  {rows.length ? <div className="col-md-8">
 
                                                             {rows.map((day, index) => (
                                                                       <div key={index} className="card shadow-sm mb-4">
@@ -74,7 +74,7 @@ const Shedule = ({ activities }) => {
                                                                                 </div>
                                                                       </div>
                                                             ))}
-                                                  </div>
+                                                  </div> : <div className="row justify-content-center text-danger">No Shedule found</div>}
                                         </div>
                               </div>
 
@@ -96,13 +96,13 @@ const Shedule = ({ activities }) => {
                                                                       </div>
 
                                                                       <div className="modal-body">
-                                                                                {holidays.map((h, i) => (
+                                                                                {holidays.length ? holidays.map((h, i) => (
                                                                                           <div key={i} className="p-2 border rounded mb-2">
                                                                                                     <strong>{formatDate(h.date)}</strong>
                                                                                                     <br />
                                                                                                     <span className="text-primary">{h.reason}</span>
                                                                                           </div>
-                                                                                ))}
+                                                                                )) : 'No holidays'}
                                                                       </div>
 
                                                                       <div className="modal-footer">
