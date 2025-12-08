@@ -47,15 +47,18 @@ Database	MySQL or SQLite or Psql
 Data Source	JSON file / API
 Storage	storage/app
 📥 Installation Guide
-1. Clone the project
+
+
+(Requirements php and node)
+1. Clone the project => 
 git clone https://github.com/siddartha4400-ui/kaplan.git
-cd kaplan
+=>cd kaplan
 
 2. Install Composer dependencies
-composer install
+(composer install)
 
 3. Install NPM dependencies
-npm install
+(npm install)
 
 4. Environment setup
 
@@ -86,7 +89,7 @@ php artisan cache:clear
 php artisan migrate
 
 6. Start front-end (Vite)
-npm run dev
+(npm run dev)
 
 7. Start Laravel server
 
