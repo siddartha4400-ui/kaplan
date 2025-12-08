@@ -23,6 +23,11 @@ The system groups activities into 120-minute daily sessions, skips weekends, avo
 
 ⚡ Modern stack:
 
+8.2 >= php version <= 8.4(Some functions are depricated in 8.5)
+
+Install node to run react and vite(for faster development changs and faster deployments)
+node version v20.19.5
+
 Laravel 11
 
 React + Inertia.js
