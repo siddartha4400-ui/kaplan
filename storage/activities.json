@@ -1,0 +1,496 @@
+{
+          "activities": [
+                    {
+                              "activityId": 6421,
+                              "name": "Getting Started",
+                              "durationMinutes": 3,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6422,
+                              "name": "Intro to Your Course",
+                              "durationMinutes": 3,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6423,
+                              "name": "Module 1: Reading Assignment",
+                              "durationMinutes": 7,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6424,
+                              "name": "Module 1: Interactive Exercise",
+                              "durationMinutes": 5,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6425,
+                              "name": "Module 1: Quiz",
+                              "durationMinutes": 31,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6426,
+                              "name": "Module 1: Exam",
+                              "durationMinutes": 60,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6427,
+                              "name": "Module 2: Reading Assignment",
+                              "durationMinutes": 6,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6428,
+                              "name": "Module 2: Interactive Exercise",
+                              "durationMinutes": 8,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6429,
+                              "name": "Module 2: Quiz",
+                              "durationMinutes": 30,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6430,
+                              "name": "Module 2: Exam",
+                              "durationMinutes": 61,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6431,
+                              "name": "Module 3: Reading Assignment",
+                              "durationMinutes": 9,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6432,
+                              "name": "Module 3: Interactive Exercise",
+                              "durationMinutes": 10,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6433,
+                              "name": "Module 3: Quiz",
+                              "durationMinutes": 25,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6434,
+                              "name": "Module 3: Exam",
+                              "durationMinutes": 55,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6435,
+                              "name": "Module 4: Reading Assignment",
+                              "durationMinutes": 15,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6436,
+                              "name": "Module 4: Interactive Exercise",
+                              "durationMinutes": 12,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6437,
+                              "name": "Module 4: Quiz",
+                              "durationMinutes": 36,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6438,
+                              "name": "Module 4: Exam",
+                              "durationMinutes": 66,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6439,
+                              "name": "Module 5: Reading Assignment",
+                              "durationMinutes": 10,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6440,
+                              "name": "Module 5: Interactive Exercise",
+                              "durationMinutes": 10,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6441,
+                              "name": "Module 5: Quiz",
+                              "durationMinutes": 32,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6442,
+                              "name": "Module 5: Exam",
+                              "durationMinutes": 60,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6443,
+                              "name": "Module 6: Reading Assignment",
+                              "durationMinutes": 10,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6444,
+                              "name": "Module 6: Interactive Exercise",
+                              "durationMinutes": 12,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6445,
+                              "name": "Module 6: Quiz",
+                              "durationMinutes": 30,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6446,
+                              "name": "Module 6: Exam",
+                              "durationMinutes": 63,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6447,
+                              "name": "Module 7: Reading Assignment",
+                              "durationMinutes": 9,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6448,
+                              "name": "Module 7: Interactive Exercise",
+                              "durationMinutes": 8,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6449,
+                              "name": "Module 7: Quiz",
+                              "durationMinutes": 30,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6450,
+                              "name": "Module 7: Exam",
+                              "durationMinutes": 60,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6451,
+                              "name": "Module 8: Reading Assignment",
+                              "durationMinutes": 10,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6452,
+                              "name": "Module 8: Interactive Exercise",
+                              "durationMinutes": 10,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6453,
+                              "name": "Module 8: Quiz",
+                              "durationMinutes": 31,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6454,
+                              "name": "Module 8: Exam",
+                              "durationMinutes": 60,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6455,
+                              "name": "Module 9: Reading Assignment",
+                              "durationMinutes": 9,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6456,
+                              "name": "Module 9: Interactive Exercise",
+                              "durationMinutes": 10,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6457,
+                              "name": "Module 9: Quiz",
+                              "durationMinutes": 35,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6458,
+                              "name": "Module 9: Exam",
+                              "durationMinutes": 67,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6459,
+                              "name": "Module 10: Reading Assignment",
+                              "durationMinutes": 9,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6460,
+                              "name": "Module 10: Interactive Exercise",
+                              "durationMinutes": 10,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6461,
+                              "name": "Module 10: Quiz",
+                              "durationMinutes": 32,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6462,
+                              "name": "Module 10: Exam",
+                              "durationMinutes": 62,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6463,
+                              "name": "Module 11: Reading Assignment",
+                              "durationMinutes": 6,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6464,
+                              "name": "Module 11: Interactive Exercise",
+                              "durationMinutes": 10,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6465,
+                              "name": "Module 11: Quiz",
+                              "durationMinutes": 34,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6466,
+                              "name": "Module 11: Exam",
+                              "durationMinutes": 60,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6467,
+                              "name": "Module 12: Reading Assignment",
+                              "durationMinutes": 8,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6468,
+                              "name": "Module 12: Interactive Exercise",
+                              "durationMinutes": 10,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6470,
+                              "name": "Module 12: Quiz",
+                              "durationMinutes": 34,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6469,
+                              "name": "Module 12: Exam",
+                              "durationMinutes": 70,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6471,
+                              "name": "Module 13: Reading Assignment",
+                              "durationMinutes": 9,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6472,
+                              "name": "Module 13: Interactive Exercise",
+                              "durationMinutes": 12,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6473,
+                              "name": "Module 13: Quiz",
+                              "durationMinutes": 34,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6474,
+                              "name": "Module 13: Exam",
+                              "durationMinutes": 60,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6475,
+                              "name": "Module 14: Reading Assignment",
+                              "durationMinutes": 12,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6476,
+                              "name": "Module 14: Interactive Exercise",
+                              "durationMinutes": 15,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6477,
+                              "name": "Module 14: Quiz",
+                              "durationMinutes": 24,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6478,
+                              "name": "Module 14: Exam",
+                              "durationMinutes": 65,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6479,
+                              "name": "Module 15: Reading Assignment",
+                              "durationMinutes": 5,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6480,
+                              "name": "Module 15: Interactive Exercise",
+                              "durationMinutes": 8,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6481,
+                              "name": "Module 15: Quiz",
+                              "durationMinutes": 35,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6482,
+                              "name": "Module 15: Exam",
+                              "durationMinutes": 70,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6483,
+                              "name": "Module 16: Reading Assignment",
+                              "durationMinutes": 12,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6484,
+                              "name": "Module 16: Interactive Exercise",
+                              "durationMinutes": 10,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6485,
+                              "name": "Module 16: Quiz",
+                              "durationMinutes": 40,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6486,
+                              "name": "Module 16: Exam",
+                              "durationMinutes": 63,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6487,
+                              "name": "Module 17: Reading Assignment",
+                              "durationMinutes": 10,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6489,
+                              "name": "Module 17: Interactive Exercise",
+                              "durationMinutes": 7,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6488,
+                              "name": "Module 17: Quiz",
+                              "durationMinutes": 25,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6490,
+                              "name": "Module 17: Exam",
+                              "durationMinutes": 64,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6491,
+                              "name": "Module 18: Reading Assignment",
+                              "durationMinutes": 5,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6492,
+                              "name": "Module 18: Interactive Exercise",
+                              "durationMinutes": 7,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6493,
+                              "name": "Module 18: Quiz",
+                              "durationMinutes": 34,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6494,
+                              "name": "Module 18: Exam",
+                              "durationMinutes": 65,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6495,
+                              "name": "Module 19: Reading Assignment",
+                              "durationMinutes": 5,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6496,
+                              "name": "Module 19: Interactive Exercise",
+                              "durationMinutes": 5,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6497,
+                              "name": "Module 19: Quiz",
+                              "durationMinutes": 30,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6498,
+                              "name": "Module 19: Exam",
+                              "durationMinutes": 60,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6499,
+                              "name": "Module 20: Reading Assignment",
+                              "durationMinutes": 12,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6500,
+                              "name": "Module 20: Interactive Exercise",
+                              "durationMinutes": 7,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6501,
+                              "name": "Module 20: Quiz",
+                              "durationMinutes": 45,
+                              "isComplete": false
+                    },
+                    {
+                              "activityId": 6502,
+                              "name": "Module 20: Exam",
+                              "durationMinutes": 80,
+                              "isComplete": false
+                    }
+          ]
+}
