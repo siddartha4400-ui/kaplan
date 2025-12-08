@@ -1,66 +1,157 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Kaplan Exam Schedule
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A Laravel + React (Inertia.js + Vite) application that generates a clean, structured daily exam study schedule from JSON activity data.
+The system groups activities into 120-minute daily sessions, skips weekends, avoids holidays, and presents everything through a modern UI.
 
-## About Laravel
+🚀 Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+📁 Reads activities from a local JSON file (storage/app)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+☁️ If the file is missing → Automatically fetches from API
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+💾 Automatically stores API response into storage/app/activities.json
 
-## Learning Laravel
+🕒 Groups activities into 120 minutes per day
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+➕ Allows up to 130 minutes when exceeding boundary
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+📅 Skips weekends (Saturday, Sunday)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+🎉 Skips holidays via HolidayService
 
-## Laravel Sponsors
+📆 Generates schedule in chronological date order
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+⚡ Modern stack:
 
-### Premium Partners
+Laravel 11
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+React + Inertia.js
 
-## Contributing
+Vite
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+MySQL / SQLite / psql
 
-## Code of Conduct
+🧪 Fully testable with PHP Unit tests
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+📂 Tech Stack
+Layer	Technology
+Backend	Laravel 11
+Frontend	React + Inertia.js
+Build Tool	Vite
+Database	MySQL or SQLite or Psql
+Data Source	JSON file / API
+Storage	storage/app
+📥 Installation Guide
+1. Clone the project
+git clone https://github.com/siddartha4400-ui/kaplan.git
+cd kaplan
 
-## Security Vulnerabilities
+2. Install Composer dependencies
+composer install
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+3. Install NPM dependencies
+npm install
 
-## License
+4. Environment setup
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Rename .env.example → .env and update database credentials:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=kaplan
+DB_USERNAME=root
+DB_PASSWORD=root
+
+
+or use SQLite:
+
+DB_CONNECTION=sqlite
+DB_DATABASE=database/database.sqlite
+
+
+Create the SQLite file:
+
+touch database/database.sqlite
+
+5. Clear caches and run migrations
+
+php artisan config:clear
+php artisan cache:clear
+php artisan migrate
+
+6. Start front-end (Vite)
+npm run dev
+
+7. Start Laravel server
+
+In a new terminal:
+
+php artisan serve
+
+📁 Activity Data Flow
+
+The application loads activities using the following priority:
+
+1️⃣ Local JSON file
+
+Path:
+storage/app/activities.json
+
+2️⃣ If missing → Fetch from remote API
+
+URL:
+https://kp-lms-static.s3.us-east-2.amazonaws.com/activities.json
+
+3️⃣ Save API response locally
+
+So next requests use the local file (faster, offline-ready).
+
+📅 Schedule Generation Rules
+
+Each day contains maximum 120 minutes
+
+If final activity exceeds limit → up to 130 minutes allowed
+
+Automatically skips Saturday
+
+Automatically skips Sunday
+
+Skips holidays using HolidayService
+
+Assigns new dates for each chunk of grouped activities
+
+Output always sorted by date
+
+🧪 Running Tests
+
+To run all tests:
+
+php artisan test
+
+
+To run a specific test:
+
+php artisan test --filter=GetActivitiesApiTest
+
+📁 Project Structure
+kaplan/
+├── app/
+│   ├── Models/Activity.php
+│   ├── Services/ActivityService.php
+│   ├── Services/HolidayService.php
+│
+├── routes/
+│   ├── api.php
+│   ├── web.php
+│
+├── storage/app/activities.json
+│
+├── resources/js/  # React + Inertia
+│
+└── database/
+
+
+👤 Maintainer
+
+siddu bandi
